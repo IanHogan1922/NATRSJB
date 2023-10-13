@@ -1,0 +1,23 @@
+{
+  "name": "ianschro/NATRSJB/NATRSJB",
+  "authors": [
+    {
+      "name": "Ian Schroeder",
+      "email": "schroeder.ian@student.greenriver.edu"
+    },
+    {
+      "name": "Sajal Khadgi",
+      "email": "khadgi.sajal@student.greenriver.edu"
+    },
+    {
+      "name": "Slavik Khrapach",
+      "email": "Khrapach.Slavik@student.greenriver.edu"
+    },{
+      "name": "Timoth Bartsch",
+      "email": "Bartsch.Timothy@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
