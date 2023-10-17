@@ -1,6 +1,9 @@
 <?php
     require '/home/ianschro/db3.php';
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +30,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php
-    $result = @mysqli_query($cnxn, $sql);
-
+<?php
     $sql = "SELECT * FROM jobboard WHERE job_title != ''";
 
     $result = @mysqli_query($cnxn, $sql);
@@ -48,14 +49,25 @@
         $paid = $row['paid'];
 
 
-        echo "<div class = 'container'>$title $status $company $category $location $posted $expiration $permanent $internship $paid 
-            </div>";
+        echo "<tr>
+          <td>$title</td>
+          <td>$status</td>
+          <td>$company</td>
+          <td>$category</td>
+          <td>$location</td>
+          <td>$posted</td>
+          <td>$expiration</td>
+          <td>$permanent</td>
+          <td>$internship</td>
+          <td>$paid</td>
+            </tr>";
+
     }
 
-    ?>
+?>
 
     </tbody>
 </table>
-<!--<script src="script.js"></script>-->
+<!--    <script src="../scripts/script.js"></script>-->
 </body>
 </html>

@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,6 @@
 
     </tbody>
 </table>
-<!--<script src="script.js"></script>-->
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
