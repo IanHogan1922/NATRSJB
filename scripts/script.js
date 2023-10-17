@@ -1,9 +1,9 @@
 // Sample job data (you can replace this with your own data)
-const jobData = [
-    { title: 'Web Developer', company: 'ABC Inc.',category: 'Park Ranger', location: 'New York', datePosted: '10-19-2023', expires: '11-19-2023', applyNow: 'https://example.com/job1' },
-    { title: 'UX Designer', company: 'XYZ Corp.',category: 'Wildlife Preserver', location: 'San Francisco', datePosted: '11-19-2023', expires: '12-19-2023',applyNow:'https://example.com/job2' },
-    // Add more job listings here
-];
+// const jobData = [
+//     { title: 'Web Developer', company: 'ABC Inc.',category: 'Park Ranger', location: 'New York', datePosted: '10-19-2023', expires: '11-19-2023', applyNow: 'https://example.com/job1' },
+//     { title: 'UX Designer', company: 'XYZ Corp.',category: 'Wildlife Preserver', location: 'San Francisco', datePosted: '11-19-2023', expires: '12-19-2023',applyNow:'https://example.com/job2' },
+//     // Add more job listings here
+// ];
 
 // Function to populate the job table with data
 function populateJobTable() {

@@ -26,7 +26,7 @@
         <th>Expires</th>
         <th>Permanent Position</th>
         <th>Internship</th>
-        <th>Apply Now</th>
+        <th>Paid</th>
     </tr>
     </thead>
     <tbody>
@@ -48,19 +48,23 @@
         $internship = $row['internship'];
         $paid = $row['paid'];
 
+        // Convert 1 to "Yes" and 0 to "No" for boolean fields
+        $permanentText = ($permanent == 1) ? "Yes" : "No";
+        $internshipText = ($internship == 1) ? "Yes" : "No";
+        $paidText = ($paid == 1) ? "Yes" : "No";
 
         echo "<tr>
-          <td>$title</td>
-          <td>$status</td>
-          <td>$company</td>
-          <td>$category</td>
-          <td>$location</td>
-          <td>$posted</td>
-          <td>$expiration</td>
-          <td>$permanent</td>
-          <td>$internship</td>
-          <td>$paid</td>
-            </tr>";
+             <td>$title</td>
+             <td>$status</td>
+             <td>$company</td>
+             <td>$category</td>
+             <td>$location</td>
+             <td>$posted</td>
+             <td>$expiration</td>
+             <td>$permanentText</td>
+             <td>$internshipText</td>
+             <td>$paidText</td>
+          </tr>";
 
     }
 
