@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Natural Resources Job Board</h1>
+<h1>Natural Resources Job Board</h1>
 </body>
 </html>
