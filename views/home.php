@@ -28,30 +28,27 @@
     </thead>
     <tbody>
     <?php
-
-
-
     $result = @mysqli_query($cnxn, $sql);
 
-    $sql = "SELECT * FROM jobboard";
+    $sql = "SELECT * FROM jobboard WHERE job_title != ''";
 
     $result = @mysqli_query($cnxn, $sql);
 
     while($row = @mysqli_fetch_assoc($result))
     {
-        $title = $row['title'];
+        $title = $row['job_title'];
         $status = $row['status'];
-        $company = $row['company'];
+        $company = $row['company_name'];
         $category = $row['category'];
         $location = $row['location'];
-        $posted = $row['posted'];
+        $posted = $row['post_date'];
         $expiration = $row['expiration'];
         $permanent = $row['permanent'];
         $internship = $row['internship'];
         $paid = $row['paid'];
 
 
-        echo "<div class = 'table'>$title $status $company $category $location $posted $expiration $permanent $internship $paid 
+        echo "<div class = 'container'>$title $status $company $category $location $posted $expiration $permanent $internship $paid 
             </div>";
     }
 
