@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Board</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 <h1>Natural Resource Job Board</h1>
@@ -24,7 +24,8 @@
     </tr>
     </thead>
     <tbody>
-    <!-- Job listings will be inserted here dynamically -->
+
+
     </tbody>
 </table>
 <script src="script.js"></script>
