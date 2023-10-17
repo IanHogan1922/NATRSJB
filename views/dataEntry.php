@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Data Entry</title>
 </head>
     <body>
         <h2 class="container">Placeholder for form data</h2>
