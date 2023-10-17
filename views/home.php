@@ -1,4 +1,5 @@
 <?php
+require '/home/ianschro/db3.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
