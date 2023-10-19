@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5351326c6c7194ba3ed1e1e5716d4dc9",
+    "content-hash": "6cd65a045005788c0c9915799c63bd69",
     "packages": [
         {
             "name": "bcosca/fatfree-core",
@@ -23,6 +23,7 @@
             "require": {
                 "php": ">=5.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -35,6 +36,10 @@
             ],
             "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
             "homepage": "http://fatfreeframework.com/",
+            "support": {
+                "issues": "https://github.com/f3-factory/fatfree-core/issues",
+                "source": "https://github.com/f3-factory/fatfree-core/tree/3.8.2"
+            },
             "time": "2023-07-23T22:11:30+00:00"
         }
     ],
@@ -47,5 +52,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

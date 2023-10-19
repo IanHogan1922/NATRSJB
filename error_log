@@ -1,0 +1,104 @@
+[17-Oct-2023 01:41:23 UTC] PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/natrsjob/public_html/NATRSJB/index.php on line 8
+[17-Oct-2023 01:41:23 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/natrsjob/public_html/NATRSJB/index.php on line 8
+[17-Oct-2023 01:44:57 UTC] Unable to open 
+[17-Oct-2023 01:44:57 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:4] Preview->render()
+[17-Oct-2023 01:44:57 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:44:57 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:45:02 UTC] Unable to open 
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:4] Preview->render()
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:45:02 UTC] Unable to open 
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:4] Preview->render()
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:45:02 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:46:18 UTC] Unable to open 
+[17-Oct-2023 01:46:18 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:46:18 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:46:18 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:46:19 UTC] Unable to open 
+[17-Oct-2023 01:46:19 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:46:19 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:46:19 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:46:20 UTC] Unable to open 
+[17-Oct-2023 01:46:20 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:46:20 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:46:20 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:47:48 UTC] Unable to open 
+[17-Oct-2023 01:47:48 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:47:48 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:47:48 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:47:49 UTC] Unable to open 
+[17-Oct-2023 01:47:49 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:47:49 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:47:49 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:47:50 UTC] Unable to open 
+[17-Oct-2023 01:47:50 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:47:50 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:47:50 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:35 UTC] Unable to open 
+[17-Oct-2023 01:48:35 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:35 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:35 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:37 UTC] Unable to open 
+[17-Oct-2023 01:48:37 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:37 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:37 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:54 UTC] Unable to open 
+[17-Oct-2023 01:48:54 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:54 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:54 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:55 UTC] Unable to open 
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:55 UTC] Unable to open 
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:55 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:56 UTC] Unable to open 
+[17-Oct-2023 01:48:56 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:56 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:56 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:48:57 UTC] Unable to open 
+[17-Oct-2023 01:48:57 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:48:57 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:48:57 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:49:22 UTC] Unable to open 
+[17-Oct-2023 01:49:22 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:49:22 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:49:22 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:49:34 UTC] Unable to open 
+[17-Oct-2023 01:49:34 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:49:34 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:49:34 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:49:43 UTC] Unable to open 
+[17-Oct-2023 01:49:43 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:49:43 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:49:43 UTC] [NATRSJB/index.php:22] Base->run()
+[17-Oct-2023 01:50:57 UTC] Unable to open 
+[17-Oct-2023 01:50:57 UTC] [NATRSJB/tmp/xq98t1t1apas.3sb1g1wltnuok.php:17] Preview->render()
+[17-Oct-2023 01:50:57 UTC] [NATRSJB/index.php:17] Preview->render()
+[17-Oct-2023 01:50:57 UTC] [NATRSJB/index.php:22] Base->run()
+[19-Oct-2023 18:26:59 UTC] HTTP 404 (GET /view/home.php)
+[19-Oct-2023 18:26:59 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 18:27:05 UTC] HTTP 404 (GET /view/home.phps)
+[19-Oct-2023 18:27:05 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:43:31 UTC] HTTP 404 (GET /add_jobs)
+[19-Oct-2023 19:43:31 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:45:23 UTC] HTTP 405 (POST /add_jobs)
+[19-Oct-2023 19:45:23 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:46:00 UTC] HTTP 405 (POST /add_jobs)
+[19-Oct-2023 19:46:00 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:46:38 UTC] Undefined index: title
+[19-Oct-2023 19:46:38 UTC] [NATRSJB/views/dataEntry.php:29] 
+[19-Oct-2023 19:46:38 UTC] [NATRSJB/views/dataEntry.php:29] Base->{closure}()
+[19-Oct-2023 19:46:38 UTC] [NATRSJB/index.php:22] View->render()
+[19-Oct-2023 19:46:38 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:47:10 UTC] HTTP 405 (POST /add_jobs)
+[19-Oct-2023 19:47:10 UTC] [NATRSJB/index.php:31] Base->run()
+[19-Oct-2023 19:48:18 UTC] Undefined index: title
+[19-Oct-2023 19:48:18 UTC] [NATRSJB/views/dataEntry.php:29] 
+[19-Oct-2023 19:48:18 UTC] [NATRSJB/views/dataEntry.php:29] Base->{closure}()
+[19-Oct-2023 19:48:18 UTC] [NATRSJB/index.php:22] View->render()
+[19-Oct-2023 19:48:18 UTC] [NATRSJB/index.php:31] Base->run()
