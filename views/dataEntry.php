@@ -1,17 +1,25 @@
 <?php
-    require 'db.php';
+
+    require '../../db.php';
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
-?>
+
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Data Entry</title>
 </head>
     <body>
-        <h2 class="container">Placeholder for form data</h2>
+    <nav>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="dataEntry.php">Data Entry</a></li>
+        </ul>
+    </nav>
+        <h2 class="container">Job Entry Sheet</h2>
         <form class="container" action="" method="POST">
             <p>The Job Title: <input placeholder="Job Title" type="text" name="title"></p>
             <p>Employment Status: <input placeholder="Full-time, Part-time, Seasonal" type="text" name="status"></p>

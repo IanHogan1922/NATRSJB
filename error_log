@@ -102,3 +102,55 @@
 [19-Oct-2023 19:48:18 UTC] [NATRSJB/views/dataEntry.php:29] Base->{closure}()
 [19-Oct-2023 19:48:18 UTC] [NATRSJB/index.php:22] View->render()
 [19-Oct-2023 19:48:18 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:05:49 UTC] syntax error, unexpected end of file [/home/natrsjob/public_html/NATRSJB/views/home.php:116]
+[21-Oct-2023 06:05:49 UTC] [NATRSJB/index.php:16] View->render()
+[21-Oct-2023 06:05:49 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:09:57 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:09:57 UTC] [NATRSJB/views/home.php:3] 
+[21-Oct-2023 06:09:57 UTC] [NATRSJB/views/home.php:3] Base->{closure}()
+[21-Oct-2023 06:09:57 UTC] [NATRSJB/views/home.php:3] require()
+[21-Oct-2023 06:09:57 UTC] [NATRSJB/index.php:16] View->render()
+[21-Oct-2023 06:09:57 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:00 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:00 UTC] [NATRSJB/views/home.php:3] 
+[21-Oct-2023 06:10:00 UTC] [NATRSJB/views/home.php:3] Base->{closure}()
+[21-Oct-2023 06:10:00 UTC] [NATRSJB/views/home.php:3] require()
+[21-Oct-2023 06:10:00 UTC] [NATRSJB/index.php:16] View->render()
+[21-Oct-2023 06:10:00 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:08 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:08 UTC] [NATRSJB/views/home.php:3] 
+[21-Oct-2023 06:10:08 UTC] [NATRSJB/views/home.php:3] Base->{closure}()
+[21-Oct-2023 06:10:08 UTC] [NATRSJB/views/home.php:3] require()
+[21-Oct-2023 06:10:08 UTC] [NATRSJB/index.php:16] View->render()
+[21-Oct-2023 06:10:08 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:09 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:09 UTC] [NATRSJB/views/dataEntry.php:3] 
+[21-Oct-2023 06:10:09 UTC] [NATRSJB/views/dataEntry.php:3] Base->{closure}()
+[21-Oct-2023 06:10:09 UTC] [NATRSJB/views/dataEntry.php:3] require()
+[21-Oct-2023 06:10:09 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:10:09 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:13 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:13 UTC] [NATRSJB/views/dataEntry.php:3] 
+[21-Oct-2023 06:10:13 UTC] [NATRSJB/views/dataEntry.php:3] Base->{closure}()
+[21-Oct-2023 06:10:13 UTC] [NATRSJB/views/dataEntry.php:3] require()
+[21-Oct-2023 06:10:13 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:10:13 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:14 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:14 UTC] [NATRSJB/views/dataEntry.php:3] 
+[21-Oct-2023 06:10:14 UTC] [NATRSJB/views/dataEntry.php:3] Base->{closure}()
+[21-Oct-2023 06:10:14 UTC] [NATRSJB/views/dataEntry.php:3] require()
+[21-Oct-2023 06:10:14 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:10:14 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:10:15 UTC] require(../db.php): failed to open stream: No such file or directory
+[21-Oct-2023 06:10:15 UTC] [NATRSJB/views/dataEntry.php:3] 
+[21-Oct-2023 06:10:15 UTC] [NATRSJB/views/dataEntry.php:3] Base->{closure}()
+[21-Oct-2023 06:10:15 UTC] [NATRSJB/views/dataEntry.php:3] require()
+[21-Oct-2023 06:10:15 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:10:15 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:11:12 UTC] Undefined index: title
+[21-Oct-2023 06:11:12 UTC] [NATRSJB/views/dataEntry.php:37] 
+[21-Oct-2023 06:11:12 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[21-Oct-2023 06:11:12 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:11:12 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:11:14 UTC] HTTP 404 (GET /home.php)
+[21-Oct-2023 06:11:14 UTC] [NATRSJB/index.php:31] Base->run()
