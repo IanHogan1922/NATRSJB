@@ -289,3 +289,33 @@
 [23-Oct-2023 20:44:05 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
 [23-Oct-2023 20:44:05 UTC] [NATRSJB/index.php:22] View->render()
 [23-Oct-2023 20:44:05 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:49:13 UTC] Undefined index: title
+[23-Oct-2023 20:49:13 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:49:13 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:49:13 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:49:13 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:49:15 UTC] Undefined index: title
+[23-Oct-2023 20:49:15 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:49:15 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:49:15 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:49:15 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:49:22 UTC] Undefined index: title
+[23-Oct-2023 20:49:22 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:49:22 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:49:22 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:49:22 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:49:26 UTC] Undefined index: title
+[23-Oct-2023 20:49:26 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:49:26 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:49:26 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:49:26 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:54:50 UTC] Undefined index: title
+[23-Oct-2023 20:54:50 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:54:50 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:54:50 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:54:50 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:54:52 UTC] Undefined index: title
+[23-Oct-2023 20:54:52 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:54:52 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:54:52 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:54:52 UTC] [NATRSJB/index.php:31] Base->run()
