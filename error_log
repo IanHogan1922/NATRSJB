@@ -154,3 +154,25 @@
 [21-Oct-2023 06:11:12 UTC] [NATRSJB/index.php:31] Base->run()
 [21-Oct-2023 06:11:14 UTC] HTTP 404 (GET /home.php)
 [21-Oct-2023 06:11:14 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:55:02 UTC] Undefined index: title
+[21-Oct-2023 06:55:02 UTC] [NATRSJB/views/dataEntry.php:37] 
+[21-Oct-2023 06:55:02 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[21-Oct-2023 06:55:02 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:55:02 UTC] [NATRSJB/index.php:31] Base->run()
+[21-Oct-2023 06:55:04 UTC] Undefined index: title
+[21-Oct-2023 06:55:04 UTC] [NATRSJB/views/dataEntry.php:37] 
+[21-Oct-2023 06:55:04 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[21-Oct-2023 06:55:04 UTC] [NATRSJB/index.php:22] View->render()
+[21-Oct-2023 06:55:04 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 18:14:53 UTC] Undefined index: title
+[23-Oct-2023 18:14:53 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 18:14:53 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 18:14:53 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 18:14:53 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 19:38:22 UTC] Undefined index: title
+[23-Oct-2023 19:38:22 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 19:38:22 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 19:38:22 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 19:38:22 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 19:38:29 UTC] HTTP 404 (GET /home.php)
+[23-Oct-2023 19:38:29 UTC] [NATRSJB/index.php:31] Base->run()
