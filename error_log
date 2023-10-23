@@ -277,3 +277,15 @@
 [23-Oct-2023 20:40:27 UTC] [NATRSJB/index.php:31] Base->run()
 [23-Oct-2023 20:40:27 UTC] HTTP 404 (GET /dataEntry.php)
 [23-Oct-2023 20:40:27 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:42:44 UTC] HTTP 404 (GET /dataEntry.php)
+[23-Oct-2023 20:42:44 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:42:47 UTC] Undefined index: title
+[23-Oct-2023 20:42:47 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:42:47 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:42:47 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:42:47 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 20:44:05 UTC] Undefined index: title
+[23-Oct-2023 20:44:05 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 20:44:05 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 20:44:05 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 20:44:05 UTC] [NATRSJB/index.php:31] Base->run()

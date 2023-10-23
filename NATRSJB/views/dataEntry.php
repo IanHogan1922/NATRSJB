@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
-            <li><a href="add_jobs">Data Entry</a></li>
+            <li><a href="dataEntry.php">Data Entry</a></li>
         </ul>
     </nav>
         <h2 class="form-vertical">Job Entry Sheet</h2>
