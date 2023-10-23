@@ -389,3 +389,43 @@
 [23-Oct-2023 20:59:38 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
 [23-Oct-2023 20:59:38 UTC] [NATRSJB/index.php:22] View->render()
 [23-Oct-2023 20:59:38 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:00:07 UTC] Undefined index: title
+[23-Oct-2023 21:00:07 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:00:07 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:00:07 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:00:07 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:00:33 UTC] Undefined index: title
+[23-Oct-2023 21:00:33 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:00:33 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:00:33 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:00:33 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:02:19 UTC] Undefined index: title
+[23-Oct-2023 21:02:19 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:02:19 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:02:19 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:02:19 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:02:43 UTC] Undefined index: title
+[23-Oct-2023 21:02:43 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:02:43 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:02:43 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:02:43 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:03:03 UTC] Undefined index: title
+[23-Oct-2023 21:03:03 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:03:03 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:03:03 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:03:03 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:03:10 UTC] Undefined index: title
+[23-Oct-2023 21:03:10 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:03:10 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:03:10 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:03:10 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:09:35 UTC] Undefined index: title
+[23-Oct-2023 21:09:35 UTC] [NATRSJB/views/dataEntry.php:37] 
+[23-Oct-2023 21:09:35 UTC] [NATRSJB/views/dataEntry.php:37] Base->{closure}()
+[23-Oct-2023 21:09:35 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:09:35 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:10:00 UTC] Undefined index: title
+[23-Oct-2023 21:10:00 UTC] [NATRSJB/views/dataEntry.php:69] 
+[23-Oct-2023 21:10:00 UTC] [NATRSJB/views/dataEntry.php:69] Base->{closure}()
+[23-Oct-2023 21:10:00 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:10:00 UTC] [NATRSJB/index.php:31] Base->run()
