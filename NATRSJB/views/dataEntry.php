@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
-            <li><a href="dataEntry.php">Data Entry</a></li>
+            <li><a href="add_jobs">Data Entry</a></li>
         </ul>
     </nav>
         <h2 class="form-vertical">Job Entry Sheet</h2>
@@ -56,6 +56,7 @@
                                 </div>
                     </fieldset>
                 </div>
+            </div>
             <p>Location: <input placeholder="Location" type="text" name="location"></p>
             <p>Post Expiration: <input type="date" name="expiration"></p>
             <p>Permanent Position: <input placeholder="1 or 0" type="text" name="permanent"></p>
