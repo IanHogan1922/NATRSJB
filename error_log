@@ -429,3 +429,8 @@
 [23-Oct-2023 21:10:00 UTC] [NATRSJB/views/dataEntry.php:69] Base->{closure}()
 [23-Oct-2023 21:10:00 UTC] [NATRSJB/index.php:22] View->render()
 [23-Oct-2023 21:10:00 UTC] [NATRSJB/index.php:31] Base->run()
+[23-Oct-2023 21:14:43 UTC] Undefined index: title
+[23-Oct-2023 21:14:43 UTC] [NATRSJB/views/dataEntry.php:77] 
+[23-Oct-2023 21:14:43 UTC] [NATRSJB/views/dataEntry.php:77] Base->{closure}()
+[23-Oct-2023 21:14:43 UTC] [NATRSJB/index.php:22] View->render()
+[23-Oct-2023 21:14:43 UTC] [NATRSJB/index.php:31] Base->run()
