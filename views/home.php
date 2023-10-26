@@ -79,10 +79,14 @@
             $title = $row['job_title'];
             $status = $row['status'];
             $company = $row['company_name'];
+            $data = $row['category'];
+            $category = explode(", ", $data);
             $category = $row['category'];
             $location = $row['location'];
-            $posted = $row['post_date'];
-            $expiration = $row['expiration'];
+            $dataBaseDate = $row['post_date'];
+            $formattedDate = date("M d,Y", strtotime($dataBaseDate));
+            $dataBaseExpire = $row['expiration'];
+            $formattedExpiration = date("M d,Y", strtotime($dataBaseExpire));
             $permanent = $row['permanent'];
             $internship = $row['internship'];
             $paid = $row['paid'];
@@ -98,8 +102,8 @@
                  <td>$company</td>
                  <td>$category</td>
                  <td>$location</td>
-                 <td>$posted</td>
-                 <td>$expiration</td>
+                 <td>$formattedDate</td>
+                 <td>$formattedExpiration</td>
                  <td>$permanentText</td>
                  <td>$internshipText</td>
                  <td>$paidText</td>
