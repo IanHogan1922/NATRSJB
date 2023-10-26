@@ -572,3 +572,30 @@
 [23-Oct-2023 22:52:55 UTC] [NATRSJB/views/dataEntry.php:97] Base->{closure}()
 [23-Oct-2023 22:52:55 UTC] [NATRSJB/index.php:22] View->render()
 [23-Oct-2023 22:52:55 UTC] [NATRSJB/index.php:31] Base->run()
+[24-Oct-2023 22:12:31 UTC] PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/natrsjob/public_html/NATRSJB/index.php on line 8
+[24-Oct-2023 22:12:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/natrsjob/public_html/NATRSJB/index.php on line 8
+[26-Oct-2023 19:26:09 UTC] Undefined index: title
+[26-Oct-2023 19:26:09 UTC] [NATRSJB/views/dataEntry.php:97] 
+[26-Oct-2023 19:26:09 UTC] [NATRSJB/views/dataEntry.php:97] Base->{closure}()
+[26-Oct-2023 19:26:09 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 19:26:09 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 19:33:19 UTC] Undefined index: title
+[26-Oct-2023 19:33:19 UTC] [NATRSJB/views/dataEntry.php:103] 
+[26-Oct-2023 19:33:19 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
+[26-Oct-2023 19:33:19 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 19:33:19 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 19:33:20 UTC] Undefined index: title
+[26-Oct-2023 19:33:20 UTC] [NATRSJB/views/dataEntry.php:103] 
+[26-Oct-2023 19:33:20 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
+[26-Oct-2023 19:33:20 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 19:33:20 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 19:33:50 UTC] Undefined index: title
+[26-Oct-2023 19:33:50 UTC] [NATRSJB/views/dataEntry.php:103] 
+[26-Oct-2023 19:33:50 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
+[26-Oct-2023 19:33:50 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 19:33:50 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 19:33:51 UTC] Undefined index: title
+[26-Oct-2023 19:33:51 UTC] [NATRSJB/views/dataEntry.php:103] 
+[26-Oct-2023 19:33:51 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
+[26-Oct-2023 19:33:51 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 19:33:51 UTC] [NATRSJB/index.php:31] Base->run()
