@@ -1,8 +1,8 @@
 <?php
 
     require '../../db.php';
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+//    error_reporting(E_ALL);
+//    ini_set('display_errors', 1);
 
  ?>
 
@@ -21,12 +21,34 @@
     <link rel="shortcut icon" href="">
 </head>
     <body>
-    <nav>
-        <ul>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="dataEntry.php">Data Entry</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="image-container">
+            <img src="pictures/helmet-newstickersupercrop.jpg" alt="Helmet Image" class="main-image">
+            <img src="pictures/GRC_Logo_White.png" alt="GRC logo" class="upper-left-image">
+            <div class="text-overlay">
+                <h1>Natural Resources</h1>
+                <p>Job Board</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="navbar-collapse collapse" id="myNavbar" role="navigation" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="" id="home-link" target="_self">All Jobs</a></li>
+                    <li><a href="https://www.greenriver.edu/students/academics/degrees-programs/natural-resources/"
+                           target="_blank" >GRC NATRS Home page</a></li>
+                    <li><a href="add_jobs">Data Entry</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -106,6 +128,7 @@
 //        $category = $_REQUEST['category'];
         $category = $_REQUEST['category'];
         $category = implode(", ", $category);
+        $data['category'] = $category;
         $location = $_REQUEST['location'];
         $expiration = $_REQUEST['expiration'];
         $permanent = isset($_REQUEST['permanent']) ? 1 : 0;

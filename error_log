@@ -619,3 +619,81 @@
 [26-Oct-2023 20:08:00 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
 [26-Oct-2023 20:08:00 UTC] [NATRSJB/index.php:22] View->render()
 [26-Oct-2023 20:08:00 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:47:39 UTC] Undefined index: title
+[26-Oct-2023 20:47:39 UTC] [NATRSJB/views/dataEntry.php:103] 
+[26-Oct-2023 20:47:39 UTC] [NATRSJB/views/dataEntry.php:103] Base->{closure}()
+[26-Oct-2023 20:47:39 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:47:39 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:48:35 UTC] Undefined index: title
+[26-Oct-2023 20:48:35 UTC] [NATRSJB/views/dataEntry.php:125] 
+[26-Oct-2023 20:48:35 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[26-Oct-2023 20:48:35 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:48:35 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:49:05 UTC] syntax error, unexpected end of file [/home/natrsjob/public_html/NATRSJB/views/dataEntry.php:134]
+[26-Oct-2023 20:49:05 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:49:05 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:49:09 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:49:09 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:49:09 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:49:09 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:49:09 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:49:12 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:49:12 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:49:12 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:49:12 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:49:12 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:49:34 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:49:34 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:49:34 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:49:34 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:49:34 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:50:20 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:50:20 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:50:20 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:50:20 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:50:20 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:50:23 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:50:23 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:50:23 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:50:23 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:50:23 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:50:43 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:50:43 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:50:43 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:50:43 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:50:43 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:51:28 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:51:28 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:51:28 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:51:28 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:51:28 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:51:32 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:51:32 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:51:32 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:51:32 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:51:32 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 20:58:58 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 20:58:58 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 20:58:58 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 20:58:58 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 20:58:58 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:00:04 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:00:04 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:00:04 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:00:04 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:00:04 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:00:07 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:00:07 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:00:07 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:00:07 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:00:07 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:02:09 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:02:09 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:02:09 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:02:09 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:02:09 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:09:48 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:09:48 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:09:48 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:09:48 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:09:48 UTC] [NATRSJB/index.php:31] Base->run()

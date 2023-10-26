@@ -79,6 +79,8 @@
             $title = $row['job_title'];
             $status = $row['status'];
             $company = $row['company_name'];
+            $data = $row['category'];
+            $category = explode(", ", $data);
             $category = $row['category'];
             $location = $row['location'];
             $posted = $row['post_date'];
