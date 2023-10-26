@@ -21,30 +21,32 @@ header {
 }
 
 .upper-left-image {
+
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 30%; /* Adjust the size as needed */
+    width: 25vw; /* Adjust the size as needed */
 }
 
 .text-overlay {
     position: absolute;
-    bottom: 0;
+    top: 19vw;
     left: 0;
     text-align: left;
     transform: translate(0, -50%);
     color: white;
     width: 50%; /* Adjust as needed */
-    padding: 20px; /* Add some padding for better readability */
+    padding: 2.2vw;
 }
 
 .text-overlay h1 {
-    font-size: 3em; /* Adjust as needed */
-    /*margin-bottom: 10px;*/
+    font-size: 3vw; /* Adjust as needed */
+    margin: 0;
 }
 
 .text-overlay p {
-    font-size: 1.7em; /* Adjust as needed */
+    font-size: 1.7vw; /* Adjust as needed */
+    margin: 0;
 }
 
 /* Nav bar styles*/
