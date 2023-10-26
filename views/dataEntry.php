@@ -125,7 +125,6 @@
         $title = $_REQUEST['title'];
         $status = $_REQUEST['status'];
         $company = $_REQUEST['company'];
-//        $category = $_REQUEST['category'];
         $category = $_REQUEST['category'];
         $category = implode(", ", $category);
         $data['category'] = $category;

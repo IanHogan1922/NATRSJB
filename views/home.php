@@ -85,10 +85,8 @@
             $location = $row['location'];
             $dataBaseDate = $row['post_date'];
             $formattedDate = date("M d,Y", strtotime($dataBaseDate));
-//            $posted = $row['post_date'];
             $dataBaseExpire = $row['expiration'];
             $formattedExpiration = date("M d,Y", strtotime($dataBaseExpire));
-//            $expiration = $row['expiration'];
             $permanent = $row['permanent'];
             $internship = $row['internship'];
             $paid = $row['paid'];
