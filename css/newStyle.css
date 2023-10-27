@@ -136,9 +136,6 @@ th {
     text-align: center;
 }
 
-tr:hover {
-    /*background-color: #4CAF50; !* Darken hover background color *!*/
-}
 
 button {
     padding: 5px 10px;
