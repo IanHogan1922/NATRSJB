@@ -34,7 +34,7 @@
                 <p>Job Board</p>
             </div>
         </div>
-        <!--<nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
                     <span class="icon-bar"></span>
@@ -51,26 +51,8 @@
                     <li><a href="add_jobs">Data Entry</a></li>
                 </ul>
             </div>
-        </nav>-->
+        </nav>
     </header>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-        </div>
-        <div class="navbar-collapse collapse" id="myNavbar" role="navigation" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="" id="home-link" target="_self">All Jobs</a></li>
-                <li><a href="https://www.greenriver.edu/students/academics/degrees-programs/natural-resources/"
-                       target="_blank" >GRC NATRS Home page</a></li>
-                <li><a href="add_jobs">Data Entry</a></li>
-            </ul>
-        </div>
-    </nav>
     <div class="container-fluid">
         <div class="col-xs-6 col-sm-6 col-md-6">
             <div id="filterButton" onclick="toggleContent()">
