@@ -1,8 +1,8 @@
 <?php
 
     require '../../db.php';
-//    error_reporting(E_ALL);
-//    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
 
  ?>
 
@@ -43,7 +43,7 @@
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="" id="home-link" target="_self">All Jobs</a></li>
                     <li><a href="https://www.greenriver.edu/students/academics/degrees-programs/natural-resources/"
-                           target="_blank" >GRC NATRS Home page</a></li>
+                           target="_blank" >GRC NATRSJ Home page</a></li>
                     <li><a href="add_jobs">Data Entry</a></li>
                 </ul>
             </div>

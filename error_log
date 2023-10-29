@@ -847,3 +847,219 @@
 [26-Oct-2023 21:26:11 UTC] [NATRSJB/views/home.php:87] strtotime()
 [26-Oct-2023 21:26:11 UTC] [NATRSJB/index.php:16] View->render()
 [26-Oct-2023 21:26:11 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:29:51 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:29:51 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:29:51 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:29:51 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:29:51 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:44:32 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:44:32 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:44:32 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:44:32 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:44:32 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:44:34 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:44:34 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:44:34 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:44:34 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:44:34 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:52:36 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:52:36 UTC] [NATRSJB/views/dataEntry.php:130] 
+[26-Oct-2023 21:52:36 UTC] [NATRSJB/views/dataEntry.php:130] implode()
+[26-Oct-2023 21:52:36 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:52:36 UTC] [NATRSJB/index.php:31] Base->run()
+[26-Oct-2023 21:54:44 UTC] implode(): Invalid arguments passed
+[26-Oct-2023 21:54:44 UTC] [NATRSJB/views/dataEntry.php:129] 
+[26-Oct-2023 21:54:44 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[26-Oct-2023 21:54:44 UTC] [NATRSJB/index.php:22] View->render()
+[26-Oct-2023 21:54:44 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 02:06:23 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 02:06:23 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 02:06:23 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 02:06:23 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 02:06:23 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 02:06:32 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 02:06:32 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 02:06:32 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 02:06:32 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 02:06:32 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 02:08:07 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 02:08:07 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 02:08:07 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 02:08:07 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 02:08:07 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 04:58:25 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 04:58:25 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 04:58:25 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 04:58:25 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 04:58:25 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 04:58:39 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 04:58:39 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 04:58:39 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 04:58:39 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 04:58:39 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 04:58:41 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 04:58:41 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 04:58:41 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 04:58:41 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 04:58:41 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 20:53:12 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 20:53:12 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 20:53:12 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 20:53:12 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 20:53:12 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 20:53:18 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 20:53:18 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 20:53:18 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 20:53:18 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 20:53:18 UTC] [NATRSJB/index.php:31] Base->run()
+[27-Oct-2023 20:53:22 UTC] implode(): Invalid arguments passed
+[27-Oct-2023 20:53:22 UTC] [NATRSJB/views/dataEntry.php:129] 
+[27-Oct-2023 20:53:22 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[27-Oct-2023 20:53:22 UTC] [NATRSJB/index.php:22] View->render()
+[27-Oct-2023 20:53:22 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:03:23 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:03:23 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:03:46 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:03:46 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:07:00 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:07:00 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:07:01 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:07:01 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:07:12 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:07:12 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:08:57 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:08:57 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:08:58 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:08:58 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:09:00 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:09:00 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:09:08 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:09:08 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:11:58 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:11:58 UTC] [NATRSJB/index.php:31] Base->run()
+[28-Oct-2023 21:11:59 UTC] HTTP 404 (GET /tableFilterScript.js)
+[28-Oct-2023 21:11:59 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:39:27 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:39:27 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:39:27 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:39:27 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:39:27 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:39:28 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:39:28 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:39:28 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:39:28 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:39:28 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:39:38 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:39:38 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:39:38 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:59:24 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:59:24 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:59:24 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:59:24 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:59:24 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:59:33 UTC] implode(): Invalid arguments passed
+[29-Oct-2023 04:59:33 UTC] [NATRSJB/views/dataEntry.php:129] 
+[29-Oct-2023 04:59:33 UTC] [NATRSJB/views/dataEntry.php:129] implode()
+[29-Oct-2023 04:59:33 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:59:33 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 04:59:40 UTC] Undefined index: title
+[29-Oct-2023 04:59:40 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 04:59:40 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 04:59:40 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 04:59:40 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:24:57 UTC] HTTP 404 (GET /jobBoard.js)
+[29-Oct-2023 05:24:57 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:30:44 UTC] Undefined index: title
+[29-Oct-2023 05:30:44 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 05:30:44 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 05:30:44 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 05:30:44 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:30:46 UTC] Undefined index: title
+[29-Oct-2023 05:30:46 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 05:30:46 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 05:30:46 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 05:30:46 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:30:47 UTC] Undefined index: title
+[29-Oct-2023 05:30:47 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 05:30:47 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 05:30:47 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 05:30:47 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:37:43 UTC] Undefined index: title
+[29-Oct-2023 05:37:43 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 05:37:43 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 05:37:43 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 05:37:43 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:41:58 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:41:58 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:41:58 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:41:58 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:41:59 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:41:59 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:41:59 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:41:59 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:00 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:00 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:12 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:12 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:13 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:13 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:19 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:19 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:19 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:19 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:42:58 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:42:58 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:00 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:00 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:45 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:45 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:47 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:47 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:55 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:55 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:56 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:56 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:56 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:56 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:57 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:57 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:58 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:58 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:58 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:58 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:43:59 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:43:59 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:00 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:00 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:00 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:00 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:01 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:01 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:01 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:01 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:02 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:02 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:02 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:02 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:02 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:02 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:03 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:03 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:44:03 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:44:03 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:51:11 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:51:11 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 05:51:17 UTC] HTTP 404 (GET /newJobBoard.js)
+[29-Oct-2023 05:51:17 UTC] [NATRSJB/index.php:31] Base->run()
+[29-Oct-2023 08:03:06 UTC] Undefined index: title
+[29-Oct-2023 08:03:06 UTC] [NATRSJB/views/dataEntry.php:125] 
+[29-Oct-2023 08:03:06 UTC] [NATRSJB/views/dataEntry.php:125] Base->{closure}()
+[29-Oct-2023 08:03:06 UTC] [NATRSJB/index.php:22] View->render()
+[29-Oct-2023 08:03:06 UTC] [NATRSJB/index.php:31] Base->run()
