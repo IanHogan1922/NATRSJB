@@ -37,13 +37,14 @@
             <li>
                 <!-- Check for a condition (in this case, whether $_SESSION['logged'] is set) -->
                 <?php
-                if (isset($_SESSION['logged'])) {
-                    echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
+            if (isset($_SESSION['logged'])) {
+                echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
                 } else {
-                echo '<a href="' . $BASE . '/login" target="_self">Admin Login</a>';
+                echo '<a href="login">Admin Login</a>'; // Link to login.php
                 }
                 ?>
             </li>
         </ul>
     </div>
+
 </div>

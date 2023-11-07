@@ -5,7 +5,7 @@
 </head>
 <body id="body">
 <header>
-    <?php include('header.html'); ?> <!-- Include the header file -->
+    <?php include 'views/modules/header.html'; ?> <!-- Include the header file -->
 </header>
 <div class="container">
     <div class="col-sm-12 split-top">
@@ -33,7 +33,7 @@
     </div>
 </div>
 <footer>
-    <?php include('footer.html'); ?> <!-- Include the footer file -->
+    <?php include 'views/modules/footer.php'; ?> <!-- Include the footer file -->
 </footer>
 </body>
 </html>

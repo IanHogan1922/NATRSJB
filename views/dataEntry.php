@@ -80,7 +80,6 @@
     </div>
     <?php
 
-
     $title = $_REQUEST['title'];
     $status = $_REQUEST['status'];
     $company = $_REQUEST['company'];
@@ -100,5 +99,7 @@
 
     ?>
 
+
+<?php include 'views/modules/footer.php'; ?>
 </body>
 </html>

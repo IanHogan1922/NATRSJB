@@ -5,9 +5,8 @@
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
-    include 'views/modules/header.html'
+    include 'views/modules/header.html';
 ?>
-
     <div class="container-fluid">
         <div class="col-xs-6 col-sm-6 col-md-6">
             <div id="filterButton" onclick="toggleContent()">
@@ -133,5 +132,9 @@
     </div>
 
     <script src="scripts/newJobBoard.js"></script>
+
+<?php
+include 'views/modules/footer.php';
+?>
 </body>
 </html>

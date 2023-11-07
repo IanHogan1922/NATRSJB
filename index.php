@@ -14,17 +14,17 @@ $f3 = Base::instance();
 $f3->route('GET /', function() {
     $view = new View(); // View
     echo $view->render('views/home.php');
-
 });
 
 $f3->route('GET|POST /add_jobs', function() { // don't forget "GET|POST"
     $view = new View();
     echo $view->render('views/dataEntry.php');
-
 });
 
-
-
+$f3->route('GET /login', function() {
+    $view = new View(); // View
+    echo $view->render('views/login.php');
+});
 
 
 //Run fat free
