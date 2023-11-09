@@ -80,23 +80,26 @@
     </div>
     <?php
 
-    $title = $_REQUEST['title'];
-    $status = $_REQUEST['status'];
-    $company = $_REQUEST['company'];
-    $category = $_REQUEST['category'];
-    $category = implode(", ", $category);
-    $data['category'] = $category;
-    $location = $_REQUEST['location'];
-    $expiration = $_REQUEST['expiration'];
-    $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
-    $internship = isset($_REQUEST['internship']) ? 1 : 0;
-    $paid = isset($_REQUEST['paid']) ? 1 : 0;
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $sql = "INSERT INTO jobboard VALUES ('$title', '$status', '$company', '$category', '$location', 
+        $title = $_REQUEST['title'];
+        $status = $_REQUEST['status'];
+        $company = $_REQUEST['company'];
+        $category = $_REQUEST['category'];
+        $category = implode(", ", $category);
+        $data['category'] = $category;
+        $location = $_REQUEST['location'];
+        $expiration = $_REQUEST['expiration'];
+        $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
+        $internship = isset($_REQUEST['internship']) ? 1 : 0;
+        $paid = isset($_REQUEST['paid']) ? 1 : 0;
+
+        $sql = "INSERT INTO jobboard VALUES ('$title', '$status', '$company', '$category', '$location', 
                          CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid')";
 
-    $result = @mysqli_query($cnxn, $sql);
+        $result = @mysqli_query($cnxn, $sql);
 
+    }
     ?>
 
 
