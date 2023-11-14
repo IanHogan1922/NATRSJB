@@ -293,3 +293,20 @@ input{
     display: none; /* Initially hidden */
     z-index: 100; /* High z-index to be on top */
 }
+/*Data Entry Submit Button Styles*/
+#dataEntrySubmitButton {
+    padding: 8px 15px;
+    font-size: 1.1em;
+    height: 35px;
+    width: 100px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+}
+#job-types{
+    font-size: 18px;
+}
+/* Apply a solid box shadow to the checkbox on label hover */
+label:hover input[type="checkbox"] {
+    box-shadow: 0 0 0 1px #388E3C;
+    transition: box-shadow 0.3s;
+}

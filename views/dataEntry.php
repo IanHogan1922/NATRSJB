@@ -59,7 +59,7 @@
                         <div class="col-xs-12 input-group">
                             <fieldset class="form-group" id="payment-checkbox-display">
                                 <h4>Select all that apply for the job:</h4>
-                                <div class="col-xs-12">
+                                <div class="col-xs-12" id="job-types">
                                     <div class="checkbox">
                                         <label><input type="checkbox" name="permanent" value="1"><span>Permanent</span></label>
                                     </div>
@@ -73,7 +73,7 @@
                             </fieldset>
                         </div>
                     </div>
-                    <p><input type="submit" value="Submit"></p>
+                    <p><input type="submit" value="Submit" id="dataEntrySubmitButton"></p>
                 </form>
             </div>
         </div>
