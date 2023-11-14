@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ @head_title }}</title>
+    <title>Admin Login</title>
 </head>
 <body id="body">
 
-<?php include 'views/modules/header.html'; ?> <!-- Include the header file -->
+<?php include 'views/modules/header.html'; ?>
 
 <div class="container login-form">
     <div class="col-sm-12 split-top">
@@ -32,5 +32,5 @@
         </div>
     </div>
 </div>
-<?php include 'views/modules/footer.php'; ?> <!-- Include the footer file -->
+<?php include 'views/modules/footer.php'; ?>
 
