@@ -10,6 +10,33 @@ header {
     position: relative;
 }
 
+.footer hr {
+    margin: 0 0 10px;
+}
+
+.footer {
+    margin-top: 15px;
+    background-color: #f8f8f8;
+    bottom: 0;
+}
+
+.footer .fa {
+    font-size: 2.5em;
+}
+
+.footer .address {
+    margin: 0 auto;
+}
+
+.footer .social-media a:hover,
+.footer .social-media a:focus{
+    text-decoration: unset;
+}
+
+.login-form {
+    margin-top: 97px;
+}
+
 nav {
     font-family: Arial, sans-serif;
 }

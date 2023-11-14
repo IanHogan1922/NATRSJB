@@ -104,5 +104,3 @@
 
 
 <?php include 'views/modules/footer.php'; ?>
-</body>
-</html>

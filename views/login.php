@@ -4,10 +4,10 @@
     <title>{{ @head_title }}</title>
 </head>
 <body id="body">
-<header>
-    <?php include 'views/modules/header.html'; ?> <!-- Include the header file -->
-</header>
-<div class="container">
+
+<?php include 'views/modules/header.html'; ?> <!-- Include the header file -->
+
+<div class="container login-form">
     <div class="col-sm-12 split-top">
         <div class="col-sm-12">
             <form class="form-horizontal" action="" method="post">
@@ -32,8 +32,5 @@
         </div>
     </div>
 </div>
-<footer>
-    <?php include 'views/modules/footer.php'; ?> <!-- Include the footer file -->
-</footer>
-</body>
-</html>
+<?php include 'views/modules/footer.php'; ?> <!-- Include the footer file -->
+

@@ -7,78 +7,79 @@
 
     include 'views/modules/header.html';
 ?>
-    <div class="container-fluid">
-        <div class="col-xs-6 col-sm-6 col-md-6">
-            <div id="filterButton" onclick="toggleContent()">
-                Keyword Filter &#62;
-            </div>
-            <div class="overlay" id="filterOverlay">
-                <div class="content" id="hiddenContent" style="display: none;">
+<script src="scripts/newJobBoard.js"></script>
+<div class="container-fluid">
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <div id="filterButton" onclick="toggleContent()">
+            Keyword Filter &#62;
+        </div>
+        <div class="overlay" id="filterOverlay">
+            <div class="content" id="hiddenContent" style="display: none;">
+                <br>
+                <form>
+                    <label><strong>Employment Type:</strong></label>
                     <br>
-                    <form>
-                        <label><strong>Employment Type:</strong></label>
-                        <br>
-                        <input type="checkbox" id="fullTime" name="fullTime" value="Full-Time" onchange="filterTable()">
-                        <label for="fullTime">Full Time</label>
-                        <br>
-                        <input type="checkbox" id="partTime" name="partTime" value="Part-Time" onchange="filterTable()">
-                        <label for="fullTime">Part Time</label>
-                        <br>
-                        <input type="checkbox" id="internship" name="internship" value="Internship" onchange="filterTable()">
-                        <label for="internship">Internship</label>
-                        <br>
-                        <label for="userDateChoice"><strong>Date Posted:</strong></label>
-                        <input type="month" name="userDateChoice" id="userDateChoice" oninput="filterTable()">
-                        <br>
-                        <label><strong>Location:</strong></label>
-                        <br>
-                        <input type="text" id="location" name="location" placeholder="Enter a Location" oninput="filterTable()">
-                        <br>
-                        <label><strong>Industry/Field:</strong></label>
-                        <br>
-                        <input type="text" id="industryField" name="Industry/Field" placeholder="Enter a Field/Industry" oninput="filterTable()">
-                        <br>
-                        <br>
-                        <button type="submit"  id="backToPageButton" form="backToPageButton" value="backToPageButton"
-                                onclick="toggleContent()">Show Filtered Content</button>
-                    </form>
-                </div>
+                    <input type="checkbox" id="fullTime" name="fullTime" value="Full-Time" onchange="filterTable()">
+                    <label for="fullTime">Full Time</label>
+                    <br>
+                    <input type="checkbox" id="partTime" name="partTime" value="Part-Time" onchange="filterTable()">
+                    <label for="fullTime">Part Time</label>
+                    <br>
+                    <input type="checkbox" id="internship" name="internship" value="Internship" onchange="filterTable()">
+                    <label for="internship">Internship</label>
+                    <br>
+                    <label for="userDateChoice"><strong>Date Posted:</strong></label>
+                    <input type="month" name="userDateChoice" id="userDateChoice" oninput="filterTable()">
+                    <br>
+                    <label><strong>Location:</strong></label>
+                    <br>
+                    <input type="text" id="location" name="location" placeholder="Enter a Location" oninput="filterTable()">
+                    <br>
+                    <label><strong>Industry/Field:</strong></label>
+                    <br>
+                    <input type="text" id="industryField" name="Industry/Field" placeholder="Enter a Field/Industry" oninput="filterTable()">
+                    <br>
+                    <br>
+                    <button type="submit"  id="backToPageButton" form="backToPageButton" value="backToPageButton"
+                            onclick="toggleContent()">Show Filtered Content</button>
+                </form>
             </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-            <select id="sortOptions" onchange="sortTable()">
-                <option value="0">Sort by Title</option>
-                <option value="1">Sort by Employment Status</option>
-                <option value="2">Sort by Company</option>
-                <option value="3">Sort by Category</option>
-                <option value="4">Sort by Location</option>
-                <option value="5">Sort by Date Posted</option>
-                <option value="6">Sort by Expiry</option>
-                <option value="7">Sort by Permanent Position</option>
-                <option value="8">Sort by Internship</option>
-                <option value="9">Sort by Paid Job</option>
-            </select>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="table-responsive">
-                    <table id="jobs-table">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Employment Status</th>
-                                <th>Company</th>
-                                <th>Category</th>
-                                <th>Location</th>
-                                <th>Date Posted</th>
-                                <th>Expires</th>
-                                <th>Permanent Position</th>
-                                <th>Internship</th>
-                                <th>Paid</th>
-                                <th>Apply Now</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+        <select id="sortOptions" onchange="sortTable()">
+            <option value="0">Sort by Title</option>
+            <option value="1">Sort by Employment Status</option>
+            <option value="2">Sort by Company</option>
+            <option value="3">Sort by Category</option>
+            <option value="4">Sort by Location</option>
+            <option value="5">Sort by Date Posted</option>
+            <option value="6">Sort by Expiry</option>
+            <option value="7">Sort by Permanent Position</option>
+            <option value="8">Sort by Internship</option>
+            <option value="9">Sort by Paid Job</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table id="jobs-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Employment Status</th>
+                            <th>Company</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Date Posted</th>
+                            <th>Expires</th>
+                            <th>Permanent Position</th>
+                            <th>Internship</th>
+                            <th>Paid</th>
+                            <th>Apply Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
 <?php
 
@@ -123,18 +124,10 @@
     }
 ?>
 
-
-                        </tbody>
-                    </table>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
-    <script src="scripts/newJobBoard.js"></script>
-
-<?php
-include 'views/modules/footer.php';
-?>
-</body>
-</html>
+</div>
+<?php include 'views/modules/footer.php'; ?> <!-- footer -->

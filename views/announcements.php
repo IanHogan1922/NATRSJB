@@ -24,8 +24,6 @@ include 'views/modules/header.html';
                 $title = $row['title'];
                 $visibility = $row['visibility'];
 
-
-
                 echo "
                 <div class='panel panel-success'>
                 <div class='panel-heading'>
@@ -38,17 +36,12 @@ include 'views/modules/header.html';
             </div>
             ";
             }
+
             ?>
         </div>
     </div>
 </div>
 
-
-
-<?php
-
-include 'views/modules/footer.php';
-
-?>
+<?php include 'views/modules/footer.php'; ?> <!-- footer -->
 
 
