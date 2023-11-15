@@ -18,7 +18,6 @@
                     <p>Company Name: <input placeholder="Company Name" type="text" name="company"></p>
                     <p>Location: <input placeholder="Location" type="text" name="location"></p>
                     <p>Post Expiration: <input type="date" name="expiration"></p>
-<!--                        <p>Applicable Career Track: <input placeholder="Career Track" type="text" name="category"></p>-->
                     <div class="col-sm-12">
                         <div class="col-xs-12 input-group">
                             <fieldset class="form-group" id="checkbox-display">
@@ -52,9 +51,7 @@
                             </fieldset>
                         </div>
                     </div>
-<!--                        <p>Permanent Position: <input placeholder="1 or 0" type="text" name="permanent"></p>-->
-<!--                        <p>Internship: <input placeholder="1 or 0" type="text" name="internship"></p>-->
-<!--                        <p>Paid: <input placeholder="1 or 0" type="text" name="paid"></p>-->
+
                     <div class="col-sm-12">
                         <div class="col-xs-12 input-group">
                             <fieldset class="form-group" id="payment-checkbox-display">
