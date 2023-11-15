@@ -18,6 +18,7 @@
                     <p>Company Name: <input placeholder="Company Name" type="text" name="company"></p>
                     <p>Location: <input placeholder="Location" type="text" name="location"></p>
                     <p>Post Expiration: <input type="date" name="expiration"></p>
+                    <p>Posting URL: <input placeholder="Web Link" type="text" name="url"></p>
                     <div class="col-sm-12">
                         <div class="col-xs-12 input-group">
                             <fieldset class="form-group" id="checkbox-display">
@@ -90,9 +91,10 @@
         $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
         $internship = isset($_REQUEST['internship']) ? 1 : 0;
         $paid = isset($_REQUEST['paid']) ? 1 : 0;
+        $url = $_REQUEST['url'];
 
-        $sql = "INSERT INTO jobboard VALUES ('$title', '$status', '$company', '$category', '$location', 
-                         CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid')";
+        $sql = "INSERT INTO jobboard2 VALUES ('$title', '$status', '$company', '$category', '$location', 
+                         CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url')";
 
         $result = @mysqli_query($cnxn, $sql);
 
