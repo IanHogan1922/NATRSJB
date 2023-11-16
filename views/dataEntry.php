@@ -92,9 +92,12 @@
         $internship = isset($_REQUEST['internship']) ? 1 : 0;
         $paid = isset($_REQUEST['paid']) ? 1 : 0;
         $url = $_REQUEST['url'];
+        $job_number = null;
+        $visibility = 1;
 
         $sql = "INSERT INTO jobboard2 VALUES ('$title', '$status', '$company', '$category', '$location', 
-                         CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url')";
+                         CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url', '$job_number', 
+                              '$visibility'";
 
         $result = @mysqli_query($cnxn, $sql);
 
