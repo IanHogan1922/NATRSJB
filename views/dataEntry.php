@@ -95,9 +95,8 @@
         $job_number = null;
         $visibility = 1;
 
-        $sql = "INSERT INTO jobboard2 VALUES ('$title', '$status', '$company', '$category', '$location', 
-                         CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url', '$job_number', 
-                              '$visibility'";
+        $sql = "INSERT INTO jobboard2 (job_title, status, company_name, category, location, post_date, expiration, permanent, internship, paid, url_link, visibility) 
+                                VALUES ('$title', '$status', '$company', '$category', '$location', CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url', '$visibility')";
 
         $result = @mysqli_query($cnxn, $sql);
 
