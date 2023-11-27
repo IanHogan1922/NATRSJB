@@ -8,23 +8,17 @@ ini_set('display_errors', 1);
 include 'views/modules/header.html'
 ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2>New Announcement</h2>
-            <form class="container" action="" method="POST">
-                <p>Title: <input placeholder="Title" type="text" name="title"></p>
-                <p>Description:</p>
-                <p><textarea placeholder="Enter description" rows="8" cols="50" type="text" name="description"></textarea></p>
-
-                <!--                        <p>Applicable Career Track: <input placeholder="Career Track" type="text" name="category"></p>-->
+<div class="container announcement-form">
+            <h2 class="text-center">New Announcement</h2>
+            <form action="" method="POST">
+                <p>Title: <br><input type="text" class="announcement-title" name="title" required></p>
+                <p>Description:<br><textarea class="announcement-description" rows="6" name="description" required></textarea></p>
+            <!--<p>Applicable Career Track: <input placeholder="Career Track" type="text" name="category"></p>-->
                 <div class="checkbox">
                     <label><input type="checkbox" name="visibility" value="1"><span>Make it visible</span></label>
                 </div>
-                <p><input type="submit" value="Submit"></p>
+                <p><input type="submit" value="Submit" id="dataEntrySubmitButton"></p>
             </form>
-        </div>
-    </div>
 </div>
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
