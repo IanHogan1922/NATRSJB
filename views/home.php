@@ -17,31 +17,41 @@
             <div class="content" id="hiddenContent" style="display: none;">
                 <br>
                 <form>
-                    <label><strong>Employment Type:</strong></label>
-                    <br>
-                    <input type="checkbox" id="fullTime" name="fullTime" value="Full-Time" onchange="filterTable()">
-                    <label for="fullTime">Full Time</label>
-                    <br>
-                    <input type="checkbox" id="partTime" name="partTime" value="Part-Time" onchange="filterTable()">
-                    <label for="fullTime">Part Time</label>
-                    <br>
-                    <input type="checkbox" id="internship" name="internship" value="Internship" onchange="filterTable()">
-                    <label for="internship">Internship</label>
-                    <br>
-                    <label for="userDateChoice"><strong>Date Posted:</strong></label>
-                    <input type="month" name="userDateChoice" id="userDateChoice" oninput="filterTable()">
-                    <br>
-                    <label><strong>Location:</strong></label>
-                    <br>
-                    <input type="text" id="location" name="location" placeholder="Enter a Location" oninput="filterTable()">
-                    <br>
-                    <label><strong>Industry/Field:</strong></label>
-                    <br>
-                    <input type="text" id="industryField" name="Industry/Field" placeholder="Enter a Field/Industry" oninput="filterTable()">
-                    <br>
-                    <br>
-                    <button type="submit"  id="backToPageButton" form="backToPageButton" value="backToPageButton"
-                            onclick="toggleContent()">Show Filtered Content</button>
+                    <div class="row">
+                        <!-- Employment Types Column -->
+                        <div class="col-md-4">
+                            <label><strong>Employment Type:</strong></label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="fullTime" name="fullTime" value="Full-Time" onchange="filterTable()"> Full Time</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="partTime" name="partTime" value="Part-Time" onchange="filterTable()"> Part Time</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="internship" name="internship" value="Internship" onchange="filterTable()"> Internship</label>
+                            </div>
+                        </div>
+                        <!-- Location and Industry/Field Column -->
+                        <div class="col-md-4">
+                            <label><strong>Location:</strong></label>
+                            <input type="text" id="location" name="location" placeholder="Enter a Location" oninput="filterTable()" class="form-control">
+                            <label><strong>Industry/Field:</strong></label>
+                            <input type="text" id="industryField" name="Industry/Field" placeholder="Enter a Field/Industry" oninput="filterTable()" class="form-control">
+                        </div>
+
+                        <!-- Date Posted Column -->
+                        <div class="col-md-4 text-center">
+                            <label for="userDateChoice"><strong>Date Posted:</strong></label>
+                            <input type="month" name="userDateChoice" id="userDateChoice" oninput="filterTable()" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Show Filtered Content Button -->
+                    <div class="row">
+                        <div class="text-center" style="margin-top: 20px;">
+                            <button type="button" id="backToPageButton" onclick="toggleContent()" style="margin: auto; display: block;">Show Filtered Content</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -83,7 +93,7 @@
 
 <?php
 
-    $sql = "SELECT * FROM jobboard2 WHERE visibility != 0";
+    $sql = "SELECT * FROM jobboard WHERE job_title != ''";
 
     $result = @mysqli_query($cnxn, $sql);
 
@@ -102,7 +112,6 @@
         $permanent = $row['permanent'];
         $internship = $row['internship'];
         $paid = $row['paid'];
-        $url = $row['url_link'];
 
         // Convert 1 to "Yes" and 0 to "No" for boolean fields
         $permanentText = ($permanent == 1) ? "Yes" : "No";
@@ -120,10 +129,11 @@
              <td>$permanentText</td>
              <td>$internshipText</td>
              <td>$paidText</td>
-             <td><a href='$url' target='_blank'>Apply</a></td> <!-- TODO: include link to application flier -->
+             <td><a href='#'>Apply</a></td> <!-- TODO: include link to application flier -->
           </tr>";
     }
 ?>
+
                     </tbody>
                 </table>
             </div>
