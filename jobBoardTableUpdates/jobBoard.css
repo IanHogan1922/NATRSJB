@@ -5,51 +5,14 @@ body, html {
 }
 
 header {
-    font-family: 'Roboto', Consolas, serif;
+    font-family: Arial, sans-serif;
     width: 100%;
     position: relative;
-}
-
-.footer hr {
-    margin: 0 0 10px;
-}
-
-.footer {
-    margin-top: 15px;
-    background-color: #f8f8f8;
-    bottom: 0;
-}
-
-.footer .fa {
-    font-size: 2.5em;
-}
-
-.footer .address {
-    margin: 0 auto;
-}
-
-.footer .social-media a:hover,
-.footer .social-media a:focus{
-    text-decoration: unset;
-}
-
-.login-form {
-    margin-top: 97px;
-}
-
-.right {
-    right: 0;
-    position: absolute !important;
-}
-
-nav {
-    font-family: Arial, sans-serif;
 }
 
 .image-container {
     position: relative;
 }
-
 .main-image {
     width: 100%; /* Make the image 100% of the header width */
     height: auto; /* Maintain aspect ratio */
@@ -57,14 +20,13 @@ nav {
 }
 
 .upper-left-image {
-
     position: absolute;
     top: 0;
     left: 0;
     width: 25vw; /* Adjust the size as needed */
 }
 
-.text-overlay {
+.overlay {
     position: absolute;
     top: 19vw;
     left: 0;
@@ -75,28 +37,22 @@ nav {
     padding: 2.2vw;
 }
 
-.text-overlay h1 {
+.overlay h1 {
     font-size: 3vw; /* Adjust as needed */
     margin: 0;
 }
-
-.text-overlay p {
-    font-size: 1.7vw; /* Adjust as needed */
-    margin: 0;
+.overlay p {
+    font-size: 1.7em; /* Adjust as needed */
 }
-
-/* Nav bar styles*/
 #navbar a {
     text-decoration: none;
     font-size: 1.2em;
     color: rgb(50, 50, 50);
+    position: relative;
+    padding-bottom: 4px;
     transition: color 0.3s;
 }
-
-.navbar-default .navbar-nav > li > a {
-    padding: 20px;
-}
-
+/* Nav bar styles*/
 #navbar {
     background-color: rgb(87, 255, 65);
 }
@@ -126,6 +82,7 @@ nav {
 #navbar a.current {
     color: rgb(33,114,84);
 }
+
 
 .edit-button-style {
     text-decoration: none;
@@ -161,7 +118,7 @@ th {
 
 button {
     padding: 5px 10px;
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -193,7 +150,7 @@ button {
     position: absolute;
     bottom: 0;
     width: 0%;
-    height: 3px;
+    height: 2px;
     background-color: #4C8065;  /* Forest Green Color */
     transition: width 0.3s;
 }
@@ -297,41 +254,4 @@ input{
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: none; /* Initially hidden */
     z-index: 100; /* High z-index to be on top */
-}
-/*Data Entry Submit Button Styles*/
-#dataEntrySubmitButton {
-    padding: 8px 15px;
-    font-size: 1.1em;
-    height: 35px;
-    width: 100px;
-    background-color: #4CAF50;
-    color: whitesmoke;
-}
-#job-types{
-    font-size: 18px;
-}
-/* Apply a solid box shadow to the checkbox on label hover */
-label:hover input[type="checkbox"] {
-    box-shadow: 0 0 0 1px #388E3C;
-    transition: box-shadow 0.3s;
-}
-
-.announcement-title {
-    width: 100%;
-    border: 1px solid #838383;
-}
-
-.announcement-description {
-    width: 100%;
-    border: 1px solid #838383;
-}
-
-.announcement-form {
-    width: 2000px;
-}
-
-#hiddenContent {
-    /* Creates a rounded boarder around the keyword filter pop-up box*/
-    display: none;
-    border-radius: 15px;
 }

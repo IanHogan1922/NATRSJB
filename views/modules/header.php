@@ -16,8 +16,6 @@
     <link rel="icon" href="pictures/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
 </head>
 <body>
 
@@ -45,7 +43,7 @@
                 <li><a href="https://www.greenriver.edu/students/academics/degrees-programs/natural-resources/"
                        target="_blank" >GRC NATRS Home page</a></li>
                 <li><a href="announcements">Announcements</a></li>
-                <li><a href="add_jobs">Data Entry</a></li>
+                <li><a href="add_jobs">New Job Form</a></li>
                 <li><a href="newAnnouncement">New Announcement</a></li>
                 <li class="right">
                     <!-- Check for a condition (in this case, whether $_SESSION['logged'] is set) -->

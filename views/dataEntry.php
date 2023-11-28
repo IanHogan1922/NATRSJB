@@ -5,7 +5,7 @@
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
-    include 'views/modules/header.html'
+include 'views/modules/header.php'
 ?>
 
     <div class="container">
