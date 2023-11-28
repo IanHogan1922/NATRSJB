@@ -93,7 +93,7 @@
 
 <?php
 
-    $sql = "SELECT * FROM jobboard WHERE job_title != ''";
+    $sql = "SELECT * FROM jobboard2 WHERE job_title != ''";
 
     $result = @mysqli_query($cnxn, $sql);
 
@@ -112,6 +112,7 @@
         $permanent = $row['permanent'];
         $internship = $row['internship'];
         $paid = $row['paid'];
+        $url = $row['url_link'];
 
         // Convert 1 to "Yes" and 0 to "No" for boolean fields
         $permanentText = ($permanent == 1) ? "Yes" : "No";
@@ -129,7 +130,7 @@
              <td>$permanentText</td>
              <td>$internshipText</td>
              <td>$paidText</td>
-             <td><a href='#'>Apply</a></td> <!-- TODO: include link to application flier -->
+             <td><a href='$url' target='_blank'>Apply</a></td> <!-- TODO: include link to application flier -->
           </tr>";
     }
 ?>
