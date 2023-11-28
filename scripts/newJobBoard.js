@@ -75,6 +75,12 @@ function toggleContent() {
         overlay.style.display = "none";
         hiddenContent.style.display = "none";
     }
+    document.addEventListener('click', function(event) {
+        if (!hiddenContent.contains(event.target) && !filterButton.contains(event.target)) {
+            overlay.style.display = "none";
+            hiddenContent.style.display = "none";
+        }
+    });
 }
 
 document.getElementById("fullTime").addEventListener("change", filterTable);
