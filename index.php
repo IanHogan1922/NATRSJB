@@ -76,7 +76,7 @@ $f3->route('POST /login', function() {
             if (password_verify($password, $row['password'])) {
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['success'] = "You are now logged in";
-                header('location:/views/dataEntry.php');
+                header('location:views/dataEntry.php');
             } else {
                 array_push($errors, "Wrong password");
             }

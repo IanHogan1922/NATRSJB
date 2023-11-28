@@ -130,7 +130,9 @@
              <td>$permanentText</td>
              <td>$internshipText</td>
              <td>$paidText</td>
+
              <td><a href='$url' target='_blank'>Apply</a></td>
+
           </tr>";
     }
 ?>
