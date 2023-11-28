@@ -37,11 +37,6 @@ header {
     margin-top: 97px;
 }
 
-.right {
-    right: 0;
-    position: absolute !important;
-}
-
 nav {
     font-family: Arial, sans-serif;
 }
@@ -315,17 +310,8 @@ label:hover input[type="checkbox"] {
     box-shadow: 0 0 0 1px #388E3C;
     transition: box-shadow 0.3s;
 }
-
-.announcement-title {
-    width: 100%;
-    border: 1px solid #838383;
-}
-
-.announcement-description {
-    width: 100%;
-    border: 1px solid #838383;
-}
-
-.announcement-form {
-    width: 2000px;
+#hiddenContent {
+    /* Creates a rounded boarder around the keyword filter pop-up box*/
+    display: none;
+    border-radius: 15px;
 }
