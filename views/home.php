@@ -93,7 +93,7 @@
 
 <?php
 
-    $sql = "SELECT * FROM jobboard2 WHERE job_title != ''";
+    $sql = "SELECT * FROM jobboard2 WHERE visibility != 0";
 
     $result = @mysqli_query($cnxn, $sql);
 
