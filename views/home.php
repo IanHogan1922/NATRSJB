@@ -19,7 +19,7 @@
                 <form>
                     <div class="row">
                         <!-- Employment Types Column -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label><strong>Employment Type:</strong></label>
                             <div class="checkbox">
                                 <label><input type="checkbox" id="fullTime" name="fullTime" value="Full-Time" onchange="filterTable()"> Full Time</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <!-- Location and Industry/Field Column -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label><strong>Location:</strong></label>
                             <input type="text" id="location" name="location" placeholder="Enter a Location" oninput="filterTable()" class="form-control">
                             <label><strong>Industry/Field:</strong></label>
@@ -40,7 +40,7 @@
                         </div>
 
                         <!-- Date Posted Column -->
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-3 text-center">
                             <label for="userDateChoice"><strong>Date Posted:</strong></label>
                             <input type="month" name="userDateChoice" id="userDateChoice" oninput="filterTable()" class="form-control">
                         </div>

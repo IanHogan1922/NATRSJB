@@ -277,7 +277,7 @@ th{
     top: 50px; /* Adjust as needed */
     margin: auto;
     padding: 20px;
-    width: 80%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 label{
