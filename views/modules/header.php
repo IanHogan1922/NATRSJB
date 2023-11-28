@@ -29,21 +29,6 @@
             <h1>Natural Resources</h1>
             <p>Job Board</p>
         </div>
-        <!-- Login on footer nav bar -->
-        <div class="row col-md-3 col-sm-12">
-            <ul class="nav navbar-nav navbar-right log-border">
-                <li>
-                    <!-- Check for a condition (in this case, whether $_SESSION['logged'] is set) -->
-                    <?php
-            if (isset($_SESSION['logged'])) {
-                echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
-                    } else {
-                    echo '<a href="login">Admin Login</a>'; // Link to login.php
-                    }
-                    ?>
-                </li>
-            </ul>
-        </div>
     </div>
     <nav class="navbar navbar-default">
         <div class="navbar-header">
@@ -62,6 +47,16 @@
                 <li><a href="announcements">Announcements</a></li>
                 <li><a href="add_jobs">Data Entry</a></li>
                 <li><a href="newAnnouncement">New Announcement</a></li>
+                <li class="right">
+                    <!-- Check for a condition (in this case, whether $_SESSION['logged'] is set) -->
+                    <?php
+                    if (isset($_SESSION['logged'])) {
+                        echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
+                    } else {
+                        echo '<a href="login">Admin Login</a>'; // Link to login.php
+                    }
+                    ?>
+                </li>
             </ul>
         </div>
     </nav>

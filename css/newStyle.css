@@ -37,6 +37,11 @@ header {
     margin-top: 97px;
 }
 
+.right {
+    right: 0;
+    position: absolute !important;
+}
+
 nav {
     font-family: Arial, sans-serif;
 }
