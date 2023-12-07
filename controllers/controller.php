@@ -1,6 +1,7 @@
 <?php
 
 use classes\job;
+use classes\announcement;
 
 class Controller {
     private $_f3;
@@ -53,5 +54,23 @@ class Controller {
 
         $view = new Template();
         echo $view->render('views/dataEntry.html');
+    }
+
+    function newAnnouncement() {
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+            $title = $_REQUEST['title'];
+            $description = $_REQUEST['description'];
+            $visibility = 1;
+
+            $newAnnouncement = new announcement($title, $description, $visibility);
+
+            $GLOBALS['dataLayer']->addAnnouncement($newAnnouncement);
+        }
+
+        $view = new Template();
+        echo $view->render('views/newAnnouncement.html');
+
     }
 }

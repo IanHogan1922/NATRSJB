@@ -88,6 +88,38 @@ class DataLayer
         return $result;
     }
 
+    function addAnnouncement($announcement) {
+
+        // Define the query
+        $sql = "INSERT INTO announcements(title, description, date, visibility)
+            VALUES (:title, :description, CURRENT_TIMESTAMP, :visibility)";
+
+        // Prepare the statement
+        $statement = $this->_dbh->prepare($sql);
+
+        $title = $announcement->getTitle();
+        $description = $announcement->getDescription();
+        $visibility = $announcement->getVisibility();
+
+        $statement->bindParam(':title', $title);
+        $statement->bindParam(':description', $description);
+        $statement->bindParam(':visibility', $visibility);
+
+        // Execute
+        $statement->execute();
+
+        // Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result
+        if ($result) {
+            echo "Fail";
+        } else {
+            echo "Success!";
+        }
+
+    }
+
     function addJob($job) {
 
         // Define the query

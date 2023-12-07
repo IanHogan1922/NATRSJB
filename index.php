@@ -44,8 +44,9 @@ $f3->route('GET /announcements', function() {
 });
 
 $f3->route('GET|POST /newAnnouncement', function() {
-    $view = new View(); // View
-    echo $view->render('views/newAnnouncement.php');
+
+    $GLOBALS['controller']->newAnnouncement();
+
 });
 
 // route for the login page

@@ -1987,3 +1987,5 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
+[07-Dec-2023 19:36:21 UTC] Call to undefined method Controller::newAnnouncement() [/home/natrsjob/public_html/NATRSJB/index.php:48]
+[07-Dec-2023 19:36:21 UTC] [NATRSJB/index.php:105] Base->run()
