@@ -76,32 +76,32 @@ include 'views/modules/header.php'
             </div>
         </div>
     </div>
-    <?php
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-        $title = $_REQUEST['title'];
-        $status = $_REQUEST['status'];
-        $company = $_REQUEST['company'];
-        $category = $_REQUEST['category'];
-        $category = implode(", ", $category);
-        $data['category'] = $category;
-        $location = $_REQUEST['location'];
-        $expiration = $_REQUEST['expiration'];
-        $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
-        $internship = isset($_REQUEST['internship']) ? 1 : 0;
-        $paid = isset($_REQUEST['paid']) ? 1 : 0;
-        $url = $_REQUEST['url'];
-        $job_number = null;
-        $visibility = 1;
-
-        $sql = "INSERT INTO jobboard2 (job_title, status, company_name, category, location, post_date, expiration, permanent, internship, paid, url_link, visibility) 
-                                VALUES ('$title', '$status', '$company', '$category', '$location', CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url', '$visibility')";
-
-        $result = @mysqli_query($cnxn, $sql);
-
-    }
-    ?>
+<!--    --><?php
+//
+//    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+//
+//        $title = $_REQUEST['title'];
+//        $status = $_REQUEST['status'];
+//        $company = $_REQUEST['company'];
+//        $category = $_REQUEST['category'];
+//        $category = implode(", ", $category);
+//        $data['category'] = $category;
+//        $location = $_REQUEST['location'];
+//        $expiration = $_REQUEST['expiration'];
+//        $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
+//        $internship = isset($_REQUEST['internship']) ? 1 : 0;
+//        $paid = isset($_REQUEST['paid']) ? 1 : 0;
+//        $url = $_REQUEST['url'];
+//        $job_number = null;
+//        $visibility = 1;
+//
+//        $sql = "INSERT INTO jobboard2 (job_title, status, company_name, category, location, post_date, expiration, permanent, internship, paid, url_link, visibility)
+//                                VALUES ('$title', '$status', '$company', '$category', '$location', CURRENT_TIMESTAMP, '$expiration', '$permanent', '$internship', '$paid', '$url', '$visibility')";
+//
+//        $result = @mysqli_query($cnxn, $sql);
+//
+//    }
+//    ?>
 
 
 <?php include 'views/modules/footer.php'; ?>

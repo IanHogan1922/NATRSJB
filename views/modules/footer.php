@@ -23,12 +23,20 @@
             </a>
         </div>
     </div>
+    
     <div class="row col-md-3 col-sm-12 address text-center right">
         <!-- Plug to main campus -->
         <strong>Main Campus:</strong><br>
         <p>
             <a class="footer-link" target="_blank" href="https://www.google.com/maps/place/Green+River+Community+College/@47.3130745,-122.179769,16z/data=!4m2!3m1!1s0x549058a045230aab:0x296322357297393b">
-                <span class="contrast">12401 Southeast 320th Street<br>Auburn, WA 98092</span>
+                <span class="contrast">12401 Southeast 320th Street<br>Auburn, WA 98092<br></span>
+                <?php
+                    if (isset($_SESSION['logged'])) {
+                        echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
+                    } else {
+                        echo '<a href="login">Admin Login</a>'; // Link to login.php
+                    }
+                    ?>
             </a>
         </p>
     </div>

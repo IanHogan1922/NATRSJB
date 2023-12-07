@@ -1616,3 +1616,245 @@
 [28-Nov-2023 18:35:20 UTC] [NATRSJB/views/home.php:115] Base->{closure}()
 [28-Nov-2023 18:35:20 UTC] [NATRSJB/index.php:16] View->render()
 [28-Nov-2023 18:35:20 UTC] [NATRSJB/index.php:44] Base->run()
+[06-Dec-2023 23:47:08 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/natrsjob/public_html/NATRSJB/index.php on line 29
+[06-Dec-2023 23:47:09 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/natrsjob/public_html/NATRSJB/index.php on line 29
+[06-Dec-2023 23:47:10 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/natrsjob/public_html/NATRSJB/index.php on line 29
+[06-Dec-2023 23:47:13 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/natrsjob/public_html/NATRSJB/index.php on line 29
+[06-Dec-2023 23:47:20 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/natrsjob/public_html/NATRSJB/index.php on line 29
+[06-Dec-2023 23:50:31 UTC] implode(): Invalid arguments passed
+[06-Dec-2023 23:50:31 UTC] [NATRSJB/controllers/controller.php:47] 
+[06-Dec-2023 23:50:31 UTC] [NATRSJB/controllers/controller.php:47] implode()
+[06-Dec-2023 23:50:31 UTC] [NATRSJB/index.php:99] Base->run()
+[07-Dec-2023 00:03:18 UTC] HTTP 404 (GET /announcements)
+[07-Dec-2023 00:03:18 UTC] [NATRSJB/controller.php:22] Base->run()
+[07-Dec-2023 00:03:18 UTC] [NATRSJB/index.php:16] spl_autoload_call()
+[07-Dec-2023 02:23:55 UTC] Call to a member function allAnnouncements() on null [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:19]
+[07-Dec-2023 02:23:55 UTC] [NATRSJB/index.php:102] Base->run()
+[07-Dec-2023 02:25:57 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 12
+[07-Dec-2023 02:27:04 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:27:06 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:29:11 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:29:13 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:32:06 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:32:09 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:32:13 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:35:05 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 11
+[07-Dec-2023 02:36:13 UTC] Class 'Controller' not found [/home/natrsjob/public_html/NATRSJB/index.php:18]
+[07-Dec-2023 02:49:44 UTC] HTTP 404 (GET /announcements)
+[07-Dec-2023 02:49:44 UTC] [NATRSJB/controller.php:22] Base->run()
+[07-Dec-2023 02:49:44 UTC] [NATRSJB/index.php:19] spl_autoload_call()
+[07-Dec-2023 02:49:48 UTC] HTTP 404 (GET /announcements)
+[07-Dec-2023 02:49:48 UTC] [NATRSJB/controller.php:22] Base->run()
+[07-Dec-2023 02:49:48 UTC] [NATRSJB/index.php:19] spl_autoload_call()
+[07-Dec-2023 02:52:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
+[07-Dec-2023 03:00:43 UTC] syntax error, unexpected end of file [/home/natrsjob/public_html/NATRSJB/views/home.php:154]
+[07-Dec-2023 03:00:43 UTC] [NATRSJB/index.php:26] View->render()
+[07-Dec-2023 03:00:43 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:01:21 UTC] PHP Parse error:  syntax error, unexpected '!' in /home/natrsjob/public_html/NATRSJB/index.php on line 24
+[07-Dec-2023 03:01:22 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:01:22 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:01:22 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:01:22 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:01:23 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:01:23 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:01:23 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:01:23 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:02:42 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:02:42 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:02:42 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:02:42 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:02:44 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:02:44 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:02:44 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:02:44 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:02:45 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:02:45 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:02:45 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:02:45 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:03:12 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:03:12 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:03:12 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:03:12 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:03:13 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:03:13 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:03:13 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:03:13 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:03:56 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:03:56 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:03:56 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:03:56 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:03:57 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:03:57 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:03:57 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:03:57 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:04:09 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:04:09 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:04:09 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:04:09 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:04:10 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:04:10 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:04:10 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:05:06 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:05:06 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:05:06 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:05:06 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:05:07 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:05:07 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:05:07 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:05:07 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:05:33 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:05:33 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:05:33 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:05:33 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:06:01 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:06:01 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:06:01 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:06:01 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:06:02 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:06:02 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:06:02 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:06:02 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:07:00 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:07:00 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:07:00 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:07:00 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:07:03 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:07:03 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:07:03 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:07:03 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:08:30 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:08:30 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:08:30 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:08:30 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:08:31 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:08:31 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:08:31 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:08:31 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:09:27 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:09:27 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:09:27 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:09:27 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:09:28 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:09:28 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:09:28 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:09:28 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:12:41 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:189]
+[07-Dec-2023 03:12:41 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:12:41 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:12:41 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:12:43 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:189]
+[07-Dec-2023 03:12:43 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:12:43 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:12:43 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:14:47 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:14:47 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:14:47 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:14:47 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:14:53 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:14:53 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:14:53 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:14:53 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:15:28 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:15:28 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:15:28 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:15:28 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:15:31 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:15:31 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:15:31 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:15:31 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:16:39 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:16:39 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:16:39 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:16:39 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:17:24 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:17:24 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:17:24 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:17:24 UTC] [NATRSJB/index.php:104] Base->run()
+[07-Dec-2023 03:18:22 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:18:22 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:18:22 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:18:22 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:21:16 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:21:16 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:21:16 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:21:16 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:21:20 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:92]
+[07-Dec-2023 03:21:20 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:21:20 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:21:20 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:22:59 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
+[07-Dec-2023 03:23:22 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:88]
+[07-Dec-2023 03:23:22 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:23:22 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:23:22 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:23:23 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:88]
+[07-Dec-2023 03:23:23 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:23:23 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:23:23 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:23:35 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:88]
+[07-Dec-2023 03:23:35 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:23:35 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:23:35 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:23:52 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:88]
+[07-Dec-2023 03:23:52 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:23:52 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:23:52 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:25:59 UTC] syntax error, unexpected '/' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:88]
+[07-Dec-2023 03:25:59 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:25:59 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:25:59 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:42:32 UTC] syntax error, unexpected '?>' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:42:32 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:42:32 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:42:32 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:43:09 UTC] syntax error, unexpected '?>' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:43:09 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:43:09 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:43:09 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:43:48 UTC] syntax error, unexpected '?>' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:43:48 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:43:48 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:43:48 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:44:04 UTC] syntax error, unexpected '?>' [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.3m34iyblx4mcs.php:93]
+[07-Dec-2023 03:44:04 UTC] [NATRSJB/controllers/controller.php:16] Preview->render()
+[07-Dec-2023 03:44:04 UTC] [NATRSJB/index.php:24] Controller->home()
+[07-Dec-2023 03:44:04 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 03:56:25 UTC] Class 'Controller' not found [/home/natrsjob/public_html/NATRSJB/index.php:19]
