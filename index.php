@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 //Require the autoload file
-require_once('vendor/autoload.php');
 require_once('model/data-layer.php');
+require_once('vendor/autoload.php');
 require_once('controllers/controller.php');
 
 // Connect to Database
@@ -26,8 +26,9 @@ $f3->route('GET /', function() {
 });
 
 $f3->route('GET|POST /add_jobs', function() {
-    $view = new View();
-    echo $view->render('views/dataEntry.php');
+
+    $GLOBALS['controller']->dataEntry();
+
 });
 
 //$f3->route('GET|POST /add_jobs', [$controller, 'dataEntry']);
@@ -87,7 +88,7 @@ $f3->route('POST /login', function() {
             if (password_verify($password, $row['password'])) {
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['success'] = "You are now logged in";
-                header('location:views/dataEntry.php');
+                header('location:views/dataEntry.html');
             } else {
                 array_push($errors, "Wrong password");
             }

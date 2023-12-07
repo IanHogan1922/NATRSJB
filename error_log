@@ -1858,3 +1858,132 @@ Stack trace:
 [07-Dec-2023 03:44:04 UTC] [NATRSJB/index.php:24] Controller->home()
 [07-Dec-2023 03:44:04 UTC] [NATRSJB/index.php:103] Base->run()
 [07-Dec-2023 03:56:25 UTC] Class 'Controller' not found [/home/natrsjob/public_html/NATRSJB/index.php:19]
+[07-Dec-2023 07:07:05 UTC] Call to undefined function dataEntry() [/home/natrsjob/public_html/NATRSJB/index.php:30]
+[07-Dec-2023 07:07:05 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:07:18 UTC] Call to undefined function dataEntry() [/home/natrsjob/public_html/NATRSJB/index.php:30]
+[07-Dec-2023 07:07:18 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:07:41 UTC] Call to a member function getTitle() on null [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:105]
+[07-Dec-2023 07:07:41 UTC] [NATRSJB/controllers/controller.php:31] DataLayer->addJob()
+[07-Dec-2023 07:07:41 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:07:41 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:08:06 UTC] Call to a member function getTitle() on null [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:105]
+[07-Dec-2023 07:08:06 UTC] [NATRSJB/controllers/controller.php:31] DataLayer->addJob()
+[07-Dec-2023 07:08:06 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:08:06 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:10:04 UTC] Call to a member function getTitle() on null [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:105]
+[07-Dec-2023 07:10:04 UTC] [NATRSJB/controllers/controller.php:31] DataLayer->addJob()
+[07-Dec-2023 07:10:04 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:10:04 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:10:07 UTC] Call to a member function getTitle() on null [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:105]
+[07-Dec-2023 07:10:07 UTC] [NATRSJB/controllers/controller.php:31] DataLayer->addJob()
+[07-Dec-2023 07:10:07 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:10:07 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:10:08 UTC] Call to a member function getTitle() on null [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:105]
+[07-Dec-2023 07:10:08 UTC] [NATRSJB/controllers/controller.php:31] DataLayer->addJob()
+[07-Dec-2023 07:10:08 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:10:08 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:11:13 UTC] Call to undefined method DataLayer::saveOrder() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:53]
+[07-Dec-2023 07:11:13 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:11:13 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:11:15 UTC] Call to undefined method DataLayer::saveOrder() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:53]
+[07-Dec-2023 07:11:15 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:11:15 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:11:16 UTC] Call to undefined method DataLayer::saveOrder() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:53]
+[07-Dec-2023 07:11:16 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:11:16 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:11:42 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:11:42 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:11:42 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:11:42 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:11:45 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:11:45 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:11:45 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:11:45 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:14:07 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:14:07 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:14:07 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:14:07 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:14:08 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:14:08 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:14:08 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:14:17 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:14:17 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:14:17 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:14:17 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:14:20 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:14:20 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:14:20 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:14:20 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:16:14 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:16:14 UTC] [NATRSJB/controllers/controller.php:50] DataLayer->addJob()
+[07-Dec-2023 07:16:14 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:16:14 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:21:02 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
+[07-Dec-2023 07:21:32 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:21:32 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:21:32 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:21:32 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:21:33 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:21:33 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:21:33 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:21:33 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:22:23 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:22:23 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:22:23 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:22:53 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:22:53 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:22:53 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:22:53 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:23:16 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:23:16 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:23:16 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:23:16 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:23:17 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:23:17 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:23:17 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:23:17 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:26:26 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:26:26 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:26:26 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:26:26 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:26:28 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:26:28 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:26:28 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:26:28 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:26:29 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:26:29 UTC] [NATRSJB/controllers/controller.php:54] DataLayer->addJob()
+[07-Dec-2023 07:26:29 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:26:29 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:29:53 UTC] Call to undefined method classes\job::getCategoty() [/home/natrsjob/public_html/NATRSJB/model/data-layer.php:108]
+[07-Dec-2023 07:29:53 UTC] [NATRSJB/controllers/controller.php:52] DataLayer->addJob()
+[07-Dec-2023 07:29:53 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:29:53 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:31:30 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[07-Dec-2023 07:31:30 UTC] [NATRSJB/model/data-layer.php:132] 
+[07-Dec-2023 07:31:30 UTC] [NATRSJB/model/data-layer.php:132] PDOStatement->execute()
+[07-Dec-2023 07:31:30 UTC] [NATRSJB/controllers/controller.php:52] DataLayer->addJob()
+[07-Dec-2023 07:31:30 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:31:30 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:34:42 UTC] Missing argument 12 for classes\job::__construct(), called in /home/natrsjob/public_html/NATRSJB/controllers/controller.php on line 48 and defined
+[07-Dec-2023 07:34:42 UTC] [NATRSJB/classes/job.php:34] 
+[07-Dec-2023 07:34:42 UTC] [NATRSJB/classes/job.php:34] Base->{closure}()
+[07-Dec-2023 07:34:42 UTC] [NATRSJB/controllers/controller.php:48] classes\job->__construct()
+[07-Dec-2023 07:34:42 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[07-Dec-2023 07:34:42 UTC] [NATRSJB/index.php:103] Base->run()
+[07-Dec-2023 07:59:53 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13

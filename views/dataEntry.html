@@ -1,0 +1,113 @@
+<include href="views/modules/header.php"></include>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Job Entry Sheet</h2>
+            <form class="container" action="" method="POST">
+                <p>The Job Title: <input placeholder="Job Title" type="text" name="title"></p>
+                <p>Employment Status:
+                    <select id="status" name="status">
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Seasonal">Seasonal</option>
+                    </select>
+                </p>
+                <p>Company Name: <input placeholder="Company Name" type="text" name="company"></p>
+                <p>Location: <input placeholder="Location" type="text" name="location"></p>
+                <p>Post Expiration: <input type="date" name="expiration"></p>
+                <p>Posting URL: <input placeholder="Web Link" type="text" name="url"></p>
+                <div class="col-sm-12">
+                    <div class="col-xs-12 input-group">
+                        <fieldset class="form-group" id="checkbox-display">
+                            <h4>Applicable Career Track:</h4>
+                                    <div class="col-xs-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="category[]" value="GIS">
+                                                <span>GIS</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="category[]" value="Forestry">
+                                                <span>Forestry</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="category[]" value="Water Quality">
+                                                <span>Water Quality</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Park Management">
+                                                <span>Park Management</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="category[]" value="Restoration">
+                                                <span>Restoration</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Conservation">
+                                                <span>Conservation</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Fish and Wildlife">
+                                                <span>Fish and Wildlife</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Wildland Fire">
+                                                <span>Wildland Fire</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Botany">
+                                                <span>Botany</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Interpretation">
+                                                <span>Interpretation</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="category[]" value="Technology">
+                                                <span>Technology</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="col-xs-12 input-group">
+                        <fieldset class="form-group" id="payment-checkbox-display">
+                            <h4>Select all that apply for the job:</h4>
+                            <div class="col-xs-12" id="job-types">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="permanent" value="1"><span>Permanent</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="internship" value="1"><span>Internship</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="paid" value="1"><span>Paid</span></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <p><input type="submit" value="Submit" id="dataEntrySubmitButton"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<include href="views/modules/footer.php"></include>

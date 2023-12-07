@@ -54,37 +54,87 @@ class DataLayer
 
     function getAnnouncements() {
 
-        //1. Define the query (test first!)
-        $sql = "SELECT * FROM announcements WHERE visibility != '0'";
+        // Define the query (test first!)
+        $sql = "SELECT * FROM announcements WHERE visibility != 0";
 
-        //2. Prepare the statement
+        // Prepare the statement
         $statement = $this->_dbh->prepare($sql);
 
-        //3. Bind the parameters
+        // Bind the parameters
 
-        //4. Execute
+        // Execute
         $statement->execute();
 
-        //5. Process the results
+        // Process the results
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
 
     function getJobs() {
 
-        //1. Define the query (test first!)
+        // Define the query (test first!)
         $sql = "SELECT * FROM jobboard2 WHERE visibility != 0";
 
-        //2. Prepare the statement
+        // Prepare the statement
         $statement = $this->_dbh->prepare($sql);
 
-        //3. Bind the parameters
+        // Bind the parameters
 
-        //4. Execute
+        // Execute
         $statement->execute();
 
-        //5. Process the results
+        // Process the results
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
+    }
+
+    function addJob($job) {
+
+        // Define the query
+        $sql = "INSERT INTO jobboard2 (
+                        job_title, status, company_name, category, location, post_date,
+                        expiration, permanent, internship, paid, url_link, visibility) 
+                VALUES (
+                        :title, :status, :company, :category, :location, CURRENT_TIMESTAMP, 
+                        :expiration, :permanent, :internship, :paid, :url, :visibility)";
+
+        // Prepare the statement
+        $statement = $this->_dbh->prepare($sql);
+
+        // Bind the parameters
+        $title = $job->getTitle();
+        $status = $job->getStatus();
+        $company = $job->getCompany();
+        $category = $job->getCategory();
+        $location = $job->getLocation();
+        $expiration = $job->getExpiration();
+        $permanent = $job->getPermanent();
+        $internship = $job->getInternship();
+        $paid = $job->getPaid();
+        $url = $job->getUrl();
+        $visibility = $job->getVisibility();
+
+        $statement->bindParam(':title', $title);
+        $statement->bindParam(':status', $status);
+        $statement->bindParam(':company', $company);
+        $statement->bindParam(':category', $category);
+        $statement->bindParam(':location', $location);
+        $statement->bindParam(':expiration', $expiration);
+        $statement->bindParam(':permanent', $permanent);
+        $statement->bindParam(':internship', $internship);
+        $statement->bindParam(':paid', $paid);
+        $statement->bindParam(':url', $url);
+        $statement->bindParam(':visibility', $visibility);
+
+        // Execute
+        $statement->execute();
+
+        // Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result
+        if ($result) {
+            echo "Fail";
+        }
     }
 }
