@@ -2,43 +2,46 @@
 
 namespace classes;
 
-class jobPost {
+class job {
 
     private $title;
     private $status;
     private $company;
     private $category;
-    private $date;
     private $location;
     private $expiration;
     private $permanent;
     private $internship;
     private $paid;
+    private $url;
+    private $visibility;
+
+
 
     /**
      * @param $title
      * @param $status
      * @param $company
      * @param $category
-     * @param $date
      * @param $location
      * @param $expiration
      * @param $permanent
      * @param $internship
      * @param $paid
      */
-    public function __construct($title, $status, $company, $category, $date, $location, $expiration, $permanent, $internship, $paid)
+    public function __construct($title, $status, $company, $category, $location, $expiration, $permanent, $internship, $paid, $url, $visibility)
     {
         $this->title = $title;
         $this->status = $status;
         $this->company = $company;
         $this->category = $category;
-        $this->date = $date;
         $this->location = $location;
         $this->expiration = $expiration;
         $this->permanent = $permanent;
         $this->internship = $internship;
         $this->paid = $paid;
+        $this->url = $url;
+        $this->visibility = $visibility;
     }
 
     /**
@@ -103,22 +106,6 @@ class jobPost {
     public function setCategory($category)
     {
         $this->category = $category;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDate()
-    {
-        return $this->date;
-    }
-
-    /**
-     * @param mixed $date
-     */
-    public function setDate($date)
-    {
-        $this->date = $date;
     }
 
     /**
@@ -199,6 +186,38 @@ class jobPost {
     public function setPaid($paid)
     {
         $this->paid = $paid;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param mixed $url
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVisibility()
+    {
+        return $this->visibility;
+    }
+
+    /**
+     * @param mixed $visibility
+     */
+    public function setVisibility($visibility)
+    {
+        $this->visibility = $visibility;
     }
 
 

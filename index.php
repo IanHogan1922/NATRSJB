@@ -5,21 +5,33 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 //Require the autoload file
+require_once('model/data-layer.php');
 require_once('vendor/autoload.php');
+require_once('controllers/controller.php');
+
+// Connect to Database
+$dataLayer = new DataLayer();
 
 //Create an instance of the Base class
 $f3 = Base::instance();
 
+//Create an instance of the Controller class
+$controller = new Controller($f3);
+
 //Define a default route
 $f3->route('GET /', function() {
-    $view = new View(); // View
-    echo $view->render('views/home.php');
+
+    $GLOBALS['controller']->home();
+
 });
 
-$f3->route('GET|POST /add_jobs', function() { // don't forget "GET|POST"
-    $view = new View();
-    echo $view->render('views/dataEntry.php');
+$f3->route('GET|POST /add_jobs', function() {
+
+    $GLOBALS['controller']->dataEntry();
+
 });
+
+//$f3->route('GET|POST /add_jobs', [$controller, 'dataEntry']);
 
 $f3->route('GET /login', function() {
     $view = new View(); // View
@@ -27,8 +39,8 @@ $f3->route('GET /login', function() {
 });
 
 $f3->route('GET /announcements', function() {
-    $view = new View(); // View
-    echo $view->render('views/announcements.php');
+
+    $GLOBALS['controller']->announcements();
 });
 
 $f3->route('GET|POST /newAnnouncement', function() {
@@ -76,7 +88,7 @@ $f3->route('POST /login', function() {
             if (password_verify($password, $row['password'])) {
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['success'] = "You are now logged in";
-                header('location:views/dataEntry.php');
+                header('location:views/dataEntry.html');
             } else {
                 array_push($errors, "Wrong password");
             }

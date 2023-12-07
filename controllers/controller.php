@@ -1,5 +1,6 @@
 <?php
 
+use classes\job;
 
 class Controller {
     private $_f3;
@@ -8,50 +9,49 @@ class Controller {
         $this->_f3 = $f3;
     }
 
-
     function home() {
+        $jobs = $GLOBALS['dataLayer']->getJobs();
+        $this->_f3->set('jobs', $jobs);
+
         $view = new Template();
-        echo $view->render('views/home.php');
+        echo $view->render('views/home.html');
     }
 
     function announcements() {
+
+        // Get data
+        $announcements = $GLOBALS['dataLayer']->getAnnouncements();
+        $this->_f3->set('announcements', $announcements);
+
         $view = new Template();
-        echo $view->render('views/announcements.php');
+        echo $view->render('views/announcements.html');
     }
 
-    function dataEntry($f3) {
-
-        $errors = [];
+    function dataEntry() {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-            $title = isset($_POST['title']) ? $_POST['title'] : "";
-            $status = isset($_POST['status']) ? $_POST['status'] : "";
-            $company = isset($_POST['company']) ? $_POST['company'] : "";
-            $category = isset($_POST['category']) ? $_POST['category'] : "";
-            $data = isset($_POST['category']) ? $_POST['category'] : "";
-            $location = isset($_POST['location']) ? $_POST['location'] : "";
-            $expiration = isset($_POST['expiration']) ? $_POST['expiration'] : "";
-            $permanent = isset($_POST['permanent']) ? $_POST['permanent'] : "";
-            $internship = isset($_POST['internship']) ? $_POST['internship'] : "";
-            $paid = isset($_POST['paid']) ? $_POST['paid'] : "";
+            $title = $_REQUEST['title'];
+            $status = $_REQUEST['status'];
+            $company = $_REQUEST['company'];
+            $category = $_REQUEST['category'];
+            $data['category'] = $category;
+            $category = implode(", ", $data);
+            $location = $_REQUEST['location'];
+            $expiration = $_REQUEST['expiration'];
+            $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
+            $internship = isset($_REQUEST['internship']) ? 1 : 0;
+            $paid = isset($_REQUEST['paid']) ? 1 : 0;
+            $url = $_REQUEST['url'];
+            $visibility = 1;
 
+            $newJob = new job($title, $status, $company, $category, $location,
+                $expiration, $permanent, $internship, $paid, $url, $visibility);
+
+            $GLOBALS['dataLayer']->addJob($newJob);
         }
 
         $view = new Template();
-        echo $view->render('views/dataEntry.php');
+        echo $view->render('views/dataEntry.html');
     }
-
-    /*// Method to display the login page
-    public function loginPage($f3) {
-        echo Template::instance()->render('login.php');
-    }
-
-    // Method to process the login form
-    public function processLogin($f3) {
-        // Your login logic here
-
-        // Assuming login is successful, redirect to some page (e.g., dashboard)
-        $f3->reroute('/admin/dashboard');
-    }*/
 }

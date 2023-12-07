@@ -2,8 +2,11 @@
 session_start();
 
 // initializing variables
-$username = "";
-$email    = "";
+$hostname = 'localhost';
+$username = 'natrsjob';
+$password = 'MMU6[0bjxm8O7(';
+$database = 'MMU6[0bjxm8O7(';
+$email    = 'natrsjob_login';
 $errors = array();
 
 // connect to the database
@@ -35,7 +38,7 @@ if (count($errors) == 0) {
         if (password_verify($password, $row['password'])) {
             $_SESSION['username'] = $row['username'];
             $_SESSION['success'] = "You are now logged in";
-            header('location:views/dataEntry.php');
+            header('location:views/dataEntry.html');
         } else {
             array_push($errors, "Wrong password");
         }
