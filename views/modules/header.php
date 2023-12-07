@@ -51,7 +51,7 @@
                     if (isset($_SESSION['logged'])) {
                         echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
                     } else {
-                        echo '<a href="login">Admin Login</a>'; // Link to login.php
+                        echo '<a href="login">Admin Login</a>'; // Link to login.html
                     }
                     ?>
                 </li>

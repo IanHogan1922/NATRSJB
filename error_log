@@ -1989,3 +1989,41 @@ Stack trace:
   thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
 [07-Dec-2023 19:36:21 UTC] Call to undefined method Controller::newAnnouncement() [/home/natrsjob/public_html/NATRSJB/index.php:48]
 [07-Dec-2023 19:36:21 UTC] [NATRSJB/index.php:105] Base->run()
+[07-Dec-2023 20:34:34 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:34:34 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:34:34 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:34:34 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:34:55 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:34:55 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:34:55 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:34:55 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:35:54 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:35:54 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:35:54 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:35:54 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:35:55 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:35:55 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:35:55 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:35:55 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:36:08 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:36:08 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:36:08 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:36:08 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:36:11 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:36:11 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:36:11 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:36:11 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:36:13 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:36:13 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:36:13 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:36:13 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 20:36:16 UTC] PHP Notice:  Undefined index: email in /home/natrsjob/public_html/NATRSJB/views/server.php on line 22
+[07-Dec-2023 20:36:16 UTC] PHP Notice:  Undefined index: password in /home/natrsjob/public_html/NATRSJB/views/server.php on line 23
+[07-Dec-2023 20:36:16 UTC] Fatal error: Undefined index: password
+[07-Dec-2023 20:36:16 UTC] [NATRSJB/views/server.php:23] 
+[07-Dec-2023 21:19:29 UTC] Call to undefined method Controller::alert() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:89]
+[07-Dec-2023 21:19:29 UTC] [NATRSJB/index.php:56] Controller->logIn()
+[07-Dec-2023 21:19:29 UTC] [NATRSJB/index.php:111] Base->run()
+[07-Dec-2023 21:19:59 UTC] Call to undefined function alert() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:89]
+[07-Dec-2023 21:19:59 UTC] [NATRSJB/index.php:56] Controller->logIn()
+[07-Dec-2023 21:19:59 UTC] [NATRSJB/index.php:111] Base->run()

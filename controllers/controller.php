@@ -71,6 +71,25 @@ class Controller {
 
         $view = new Template();
         echo $view->render('views/newAnnouncement.html');
+    }
 
+    function logIn()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Get the form data
+            $email = $_REQUEST['email'];
+            $password = $_REQUEST['password'];
+
+
+            if ($GLOBALS['dataLayer']->signIn($email, $password)) {
+                echo 'Sign in successful!';
+//                $f3->reroute('/');
+            } else {
+                echo 'Sign in failed!';
+            }
+        }
+
+        $view = new Template();
+        echo $view->render('views/login.html');
     }
 }

@@ -30,6 +30,7 @@
 
 //echo $_SERVER['DOCUMENT_ROOT'];
 require_once($_SERVER['DOCUMENT_ROOT'] . '/../pdo-config.php');
+//include('views/server.php');
 
 class DataLayer
 {
@@ -168,5 +169,34 @@ class DataLayer
         if ($result) {
             echo "Fail";
         }
+    }
+
+    function signIn($email, $password)
+    {
+        // Get the account from the database
+        $sql = "SELECT * FROM admin WHERE email = :email AND password = :password";
+
+        // Prepare the statement
+        $statement = $this->_dbh->prepare($sql);
+
+        // Bind the parameters
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':password', $password);
+
+        // Execute
+        $statement->execute();
+
+        // Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result
+        if ($result) {
+            $_SESSION['token'] = $result[0]['token'];
+//            echo "User found";
+            return true;
+        }
+
+//        echo "User error";
+        return false;
     }
 }

@@ -5,7 +5,7 @@ session_start();
 $hostname = 'localhost';
 $username = 'natrsjob';
 $password = 'MMU6[0bjxm8O7(';
-$database = 'MMU6[0bjxm8O7(';
+$database = 'natrsjob_login';
 $email    = 'natrsjob_login';
 $errors = array();
 
