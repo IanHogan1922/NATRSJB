@@ -76,6 +76,73 @@
                 <table id="jobs-table">
                     <check if="{{ isset($_SESSION['logged']) && $_SESSION['logged']['admin'] == 1 }}">
                         <true>
+                            <thead>
+                                <tr>
+                                    <th>Delete</th>
+                                    <th>Title</th>
+                                    <th>Employment Status</th>
+                                    <th>Company</th>
+                                    <th>Category</th>
+                                    <th>Location</th>
+                                    <th>Date Posted</th>
+                                    <th>Expires</th>
+                                    <th>Permanent Position</th>
+                                    <th>Internship</th>
+                                    <th>Paid</th>
+                                    <th>Apply Now</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            <?php
+
+                            $sql = "SELECT * FROM jobboard2 WHERE visibility != 0";
+
+                            $result = @mysqli_query($cnxn, $sql);
+
+                            while($row = @mysqli_fetch_assoc($result)) {
+                                $number = $row['job_number'];
+                                $title = $row['job_title'];
+                                $status = $row['status'];
+                                $company = $row['company_name'];
+                                $data = $row['category'];
+                                $category = explode(", ", $data);
+                                $category = $row['category'];
+                                $location = $row['location'];
+                                $dataBaseDate = $row['post_date'];
+                                $formattedDate = date("M d,Y", strtotime($dataBaseDate));
+                                $dataBaseExpire = $row['expiration'];
+                                $formattedExpiration = date("M d,Y", strtotime($dataBaseExpire));
+                                $permanent = $row['permanent'];
+                                $internship = $row['internship'];
+                                $paid = $row['paid'];
+                                $url = $row['url_link'];
+
+                                // Convert 1 to "Yes" and 0 to "No" for boolean fields
+                                $permanentText = ($permanent == 1) ? "Yes" : "No";
+                                $internshipText = ($internship == 1) ? "Yes" : "No";
+                                $paidText = ($paid == 1) ? "Yes" : "No";
+
+                                echo "<tr>
+                                     <td></td>
+                                     <td>$title</td>
+                                     <td>$status</td>
+                                     <td>$company</td>
+                                     <td>$category</td>
+                                     <td>$location</td>
+                                     <td>$formattedDate</td>
+                                     <td>$formattedExpiration</td>
+                                     <td>$permanentText</td>
+                                     <td>$internshipText</td>
+                                     <td>$paidText</td>
+                        
+                                     <td><a href='$url' target='_blank'>Apply</a></td>
+                        
+                                  </tr>";
+                            }
+                            ?>
+
+                            </tbody>
                         </true>
                         <false>
                             <thead>
