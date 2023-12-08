@@ -44,15 +44,11 @@
                         <fieldset class="form-group" id="payment-checkbox-display">
                             <h4>Select all that apply for the job:</h4>
                             <div class="col-xs-12" id="job-types">
-                                <div class="checkbox">
-                                    <label><input type="checkbox" name="permanent" value="1"><span>Permanent</span></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" name="internship" value="1"><span>Internship</span></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" name="paid" value="1"><span>Paid</span></label>
-                                </div>
+                                <repeat group="{{ @others }}" value="{{ @other }}">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="{{ strToLower(@other) }}" value="1"><span>{{ @other }}</span></label>
+                                    </div>
+                                </repeat>
                             </div>
                         </fieldset>
                     </div>

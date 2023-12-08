@@ -54,6 +54,9 @@ class Controller {
         $categories = $GLOBALS['dataLayer']->getCategories();
         $this->_f3->set('categories', $categories);
 
+        $others = $GLOBALS['dataLayer']->getOthers();
+        $this->_f3->set('others', $others);
+
         $view = new Template();
         echo $view->render('views/dataEntry.html');
     }

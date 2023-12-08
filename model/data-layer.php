@@ -201,4 +201,9 @@ class DataLayer
         return $categories;
     }
 
+    function getOthers() {
+        $others = array("Permanent", "Internship", "Paid");
+        return $others;
+    }
+
 }

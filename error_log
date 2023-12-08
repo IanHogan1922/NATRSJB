@@ -2053,3 +2053,59 @@ Stack trace:
 [08-Dec-2023 06:11:43 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
 [08-Dec-2023 06:11:43 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
 [08-Dec-2023 06:11:43 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:29:50 UTC] Invalid method NULL
+[08-Dec-2023 06:29:50 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:29:50 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:29:50 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:29:50 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:32:15 UTC] implode(): Invalid arguments passed
+[08-Dec-2023 06:32:15 UTC] [NATRSJB/controllers/controller.php:39] 
+[08-Dec-2023 06:32:15 UTC] [NATRSJB/controllers/controller.php:39] implode()
+[08-Dec-2023 06:32:15 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:32:15 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:32:43 UTC] Invalid method NULL
+[08-Dec-2023 06:32:43 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:32:43 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:32:43 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:32:43 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:32:48 UTC] Invalid method NULL
+[08-Dec-2023 06:32:48 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:32:48 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:32:48 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:32:48 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:39:28 UTC] Invalid method NULL
+[08-Dec-2023 06:39:28 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:39:28 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:39:28 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:39:28 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:39:33 UTC] Invalid method NULL
+[08-Dec-2023 06:39:33 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:39:33 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:39:33 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:39:33 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:43:45 UTC] Invalid method NULL
+[08-Dec-2023 06:43:45 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:43:45 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:43:45 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:43:45 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:43:46 UTC] Invalid method NULL
+[08-Dec-2023 06:43:46 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:43:46 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:43:46 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:43:46 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:43:49 UTC] Invalid method NULL
+[08-Dec-2023 06:43:49 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:43:49 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:43:49 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:43:49 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:43:53 UTC] Invalid method NULL
+[08-Dec-2023 06:43:53 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:47] Base->call()
+[08-Dec-2023 06:43:53 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:43:53 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:43:53 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:44:19 UTC] Undefined variable: jobs
+[08-Dec-2023 06:44:19 UTC] [NATRSJB/tmp/xq98t1t1apas.16mt3q1hb61x6.php:91] 
+[08-Dec-2023 06:44:19 UTC] [NATRSJB/tmp/xq98t1t1apas.16mt3q1hb61x6.php:91] Base->{closure}()
+[08-Dec-2023 06:44:19 UTC] [NATRSJB/controller.php:17] Preview->render()
+[08-Dec-2023 06:44:19 UTC] [NATRSJB/controller.php:22] Base->run()
+[08-Dec-2023 06:44:19 UTC] [NATRSJB/index.php:19] spl_autoload_call()
