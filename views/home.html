@@ -74,7 +74,14 @@
                     
                     <thead>
                         <tr>
-<!--                            <th>Delete</th>-->
+                            <check if="{{ @admin != false }}">
+                                <true>
+                                    <th>Delete Entry</th>
+                                </true>
+                                <false>
+
+                                </false>
+                            </check>
                             <th>Title</th>
                             <th>Employment Status</th>
                             <th>Company</th>
@@ -92,6 +99,16 @@
                     <tbody>
                         <repeat group="{{ @jobs }}" value="{{ @job }}">
                             <tr>
+                                <check if="{{ @admin != false }}">
+                                    <true>
+                                        <td id="delete" class="center-text">
+                                            <a style="color:red;" href="{{ @job }}/hide/{{ @job.job_number }}"
+                                               target="_self"><i class="fa fa-scissors" aria-hidden="true"></i></a></td>
+                                    </true>
+                                    <false>
+
+                                    </false>
+                                </check>
                                 <td>{{ @job.job_title }}</td>
                                 <td>{{ @job.status }}</td>
                                 <td>{{ @job.company_name }}</td>

@@ -8,7 +8,7 @@
                 <div class='panel panel-success'>
                     <div class='panel-heading'>
                         <strong>{{ @announcement.title }}</strong>
-                        <span class='pull-right'><strong>{{ @announcement.date }}</strong></span>
+                        <span class='pull-right'><strong>{{ date('M j, Y', strtotime(@announcement.date)) }}</strong></span>
                         <div class='panel-body wrap-text'>
                             {{ @announcement.description }}
                         </div>
