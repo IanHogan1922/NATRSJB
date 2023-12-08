@@ -36,8 +36,7 @@ class Controller {
             $status = $_REQUEST['status'];
             $company = $_REQUEST['company'];
             $category = $_REQUEST['category'];
-            $data['category'] = $category;
-            $category = implode(", ", $data);
+            $category = implode(", ", $category);
             $location = $_REQUEST['location'];
             $expiration = $_REQUEST['expiration'];
             $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
@@ -51,6 +50,9 @@ class Controller {
 
             $GLOBALS['dataLayer']->addJob($newJob);
         }
+
+        $categories = $GLOBALS['dataLayer']->getCategories();
+        $this->_f3->set('categories', $categories);
 
         $view = new Template();
         echo $view->render('views/dataEntry.html');

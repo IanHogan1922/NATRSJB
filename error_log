@@ -2027,3 +2027,29 @@ Stack trace:
 [07-Dec-2023 21:19:59 UTC] Call to undefined function alert() [/home/natrsjob/public_html/NATRSJB/controllers/controller.php:89]
 [07-Dec-2023 21:19:59 UTC] [NATRSJB/index.php:56] Controller->logIn()
 [07-Dec-2023 21:19:59 UTC] [NATRSJB/index.php:111] Base->run()
+[08-Dec-2023 06:02:14 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/natrsjob/public_html/NATRSJB/model/data-layer.php on line 201
+[08-Dec-2023 06:10:14 UTC] Non-static method DataLayer::getCategories() should not be called statically
+[08-Dec-2023 06:10:14 UTC] [NATRSJB/controllers/controller.php:54] 
+[08-Dec-2023 06:10:14 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
+[08-Dec-2023 06:10:14 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:10:14 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:10:17 UTC] Non-static method DataLayer::getCategories() should not be called statically
+[08-Dec-2023 06:10:17 UTC] [NATRSJB/controllers/controller.php:54] 
+[08-Dec-2023 06:10:17 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
+[08-Dec-2023 06:10:17 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:10:17 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:10:20 UTC] Non-static method DataLayer::getCategories() should not be called statically
+[08-Dec-2023 06:10:20 UTC] [NATRSJB/controllers/controller.php:54] 
+[08-Dec-2023 06:10:20 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
+[08-Dec-2023 06:10:20 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:10:20 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:11:39 UTC] Non-static method DataLayer::getCategories() should not be called statically
+[08-Dec-2023 06:11:39 UTC] [NATRSJB/controllers/controller.php:54] 
+[08-Dec-2023 06:11:39 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
+[08-Dec-2023 06:11:39 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:11:39 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:11:43 UTC] Non-static method DataLayer::getCategories() should not be called statically
+[08-Dec-2023 06:11:43 UTC] [NATRSJB/controllers/controller.php:54] 
+[08-Dec-2023 06:11:43 UTC] [NATRSJB/controllers/controller.php:54] Base->{closure}()
+[08-Dec-2023 06:11:43 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:11:43 UTC] [NATRSJB/index.php:104] Base->run()

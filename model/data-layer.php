@@ -171,8 +171,7 @@ class DataLayer
         }
     }
 
-    function signIn($email, $password)
-    {
+    function signIn($email, $password) {
         // Get the account from the database
         $sql = "SELECT * FROM admin WHERE email = :email AND password = :password";
 
@@ -192,14 +191,14 @@ class DataLayer
         // Return the result
         if ($result) {
             $_SESSION['token'] = $result[0]['token'];
-//            echo "User found";
             return true;
         }
-
-//        echo "User error";
         return false;
     }
 
-
+    function getCategories() {
+        $categories = array("GIS", "Forestry", "Water Quality", "Park Management", "Restoration", "Conservation", "Fish and Wildlife", "Wildland Fire", "Botany", "Interpretation", "Technology");
+        return $categories;
+    }
 
 }
