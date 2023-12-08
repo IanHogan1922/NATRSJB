@@ -67,40 +67,82 @@
         <div class="col-md-12">
             <div class="table-responsive">
                 <table id="jobs-table">
-                    <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Employment Status</th>
-                        <th>Company</th>
-                        <th>Category</th>
-                        <th>Location</th>
-                        <th>Date Posted</th>
-                        <th>Expires</th>
-                        <th>Permanent Position</th>
-                        <th>Internship</th>
-                        <th>Paid</th>
-                        <th>Apply Now</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <repeat group="{{ @jobs }}" value="{{ @job }}">
-                        <tr>
-                            <td>{{ @job.job_title }}</td>
-                            <td>{{ @job.status }}</td>
-                            <td>{{ @job.company_name }}</td>
-                            <td>{{ @job.category }}</td>
-                            <td>{{ @job.location }}</td>
-                            <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
-                            <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
-                            <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
-                            <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
-                            <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
+                    <check if="{{ isset($_SESSION['logged']) && $_SESSION['logged']['admin'] == 1 }}">
+                        <true>
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Employment Status</th>
+                                <th>Company</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Date Posted</th>
+                                <th>Expires</th>
+                                <th>Permanent Position</th>
+                                <th>Internship</th>
+                                <th>Paid</th>
+                                <th>Apply Now</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <repeat group="{{ @jobs }}" value="{{ @job }}">
+                                <tr>
+                                    <td>{{ @job.job_title }}</td>
+                                    <td>{{ @job.status }}</td>
+                                    <td>{{ @job.company_name }}</td>
+                                    <td>{{ @job.category }}</td>
+                                    <td>{{ @job.location }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
+                                    <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
 
-                            <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
+                                    <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
 
-                        </tr>
-                    </repeat>
-                    </tbody>
+                                </tr>
+                            </repeat>
+                            </tbody>
+
+                        </true>
+                        <false>
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Employment Status</th>
+                                <th>Company</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Date Posted</th>
+                                <th>Expires</th>
+                                <th>Permanent Position</th>
+                                <th>Internship</th>
+                                <th>Paid</th>
+                                <th>Apply Now</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <repeat group="{{ @jobs }}" value="{{ @job }}">
+                                <tr>
+                                    <td>{{ @job.job_title }}</td>
+                                    <td>{{ @job.status }}</td>
+                                    <td>{{ @job.company_name }}</td>
+                                    <td>{{ @job.category }}</td>
+                                    <td>{{ @job.location }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
+                                    <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
+
+                                    <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
+
+                                </tr>
+                            </repeat>
+                            </tbody>
+
+                        </false>
+                    </check>
                 </table>
             </div>
         </div>
