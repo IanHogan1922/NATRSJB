@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 
 /*  NATRSLB/model/data-layer.php
 
@@ -199,4 +199,7 @@ class DataLayer
 //        echo "User error";
         return false;
     }
+
+
+
 }
