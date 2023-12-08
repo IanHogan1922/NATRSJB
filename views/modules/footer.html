@@ -34,16 +34,14 @@
         <p>
             <a class="footer-link" target="_blank" href="https://www.google.com/maps/place/Green+River+Community+College/@47.3130745,-122.179769,16z/data=!4m2!3m1!1s0x549058a045230aab:0x296322357297393b">
                 <span class="contrast">12401 Southeast 320th Street<br>Auburn, WA 98092<br></span>
-                <!-- TODO: make this work with html and f3
-                <?php
-/*                    if (isset($_SESSION['logged'])) {
-                        echo '<a href="' . $BASE . '/logout" target="_self">Logout</a>';
-                    } else {
-                        echo '<a href="login">Admin Login</a>'; // Link to login.html
-                    }
-                    */?>
-                -->
-                <a href="login">Admin Login</a>
+                <check if="{{ @admin != false }}">
+                    <true>
+                        <a href="logout">Log Out</a>
+                    </true>
+                    <false>
+                        <a href="login">Admin Login</a>
+                    </false>
+                </check>
             </a>
         </p>
     </div>

@@ -2109,3 +2109,23 @@ Stack trace:
 [08-Dec-2023 06:44:19 UTC] [NATRSJB/controller.php:17] Preview->render()
 [08-Dec-2023 06:44:19 UTC] [NATRSJB/controller.php:22] Base->run()
 [08-Dec-2023 06:44:19 UTC] [NATRSJB/index.php:19] spl_autoload_call()
+[08-Dec-2023 06:52:44 UTC] Unable to open views/modules/header.php
+[08-Dec-2023 06:52:44 UTC] [NATRSJB/tmp/xq98t1t1apas.16mt3q1hb61x6.php:3] Preview->render()
+[08-Dec-2023 06:52:44 UTC] [NATRSJB/controllers/controller.php:18] Preview->render()
+[08-Dec-2023 06:52:44 UTC] [NATRSJB/index.php:24] Controller->home()
+[08-Dec-2023 06:52:44 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:52:51 UTC] Unable to open views/modules/header.php
+[08-Dec-2023 06:52:51 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:3] Preview->render()
+[08-Dec-2023 06:52:51 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:52:51 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:52:51 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 06:53:01 UTC] Unable to open views/modules/header.php
+[08-Dec-2023 06:53:01 UTC] [NATRSJB/tmp/xq98t1t1apas.a27qbhw03t4b.php:3] Preview->render()
+[08-Dec-2023 06:53:01 UTC] [NATRSJB/controllers/controller.php:61] Preview->render()
+[08-Dec-2023 06:53:01 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 06:53:01 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 07:10:33 UTC] PHP Warning:  Missing argument 1 for DataLayer::__construct(), called in /home/natrsjob/public_html/NATRSJB/index.php on line 13 and defined in /home/natrsjob/public_html/NATRSJB/model/data-layer.php on line 45
+[08-Dec-2023 07:10:33 UTC] Fatal error: Missing argument 1 for DataLayer::__construct(), called in /home/natrsjob/public_html/NATRSJB/index.php on line 13 and defined
+[08-Dec-2023 07:10:33 UTC] [NATRSJB/model/data-layer.php:45] 
+[08-Dec-2023 07:38:13 UTC] HTTP 404 (GET /logout)
+[08-Dec-2023 07:38:13 UTC] [NATRSJB/index.php:104] Base->run()

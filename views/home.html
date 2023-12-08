@@ -2,7 +2,7 @@
     session_start();
 ?>
 
-<include href="views/modules/header.php"></include>
+<include href="views/modules/header.html"></include>
 
 <script src="scripts/newJobBoard.js"></script>
 <div class="container-fluid">
@@ -71,85 +71,49 @@
         <div class="col-md-12">
             <div class="table-responsive">
                 <table id="jobs-table">
-                    <?php if (isset($_SESSION['logged']) && $_SESSION['logged']['admin'] == 1): ?>
-                        <thead>
+                    
+                    <thead>
+                        <tr>
+<!--                            <th>Delete</th>-->
+                            <th>Title</th>
+                            <th>Employment Status</th>
+                            <th>Company</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Date Posted</th>
+                            <th>Expires</th>
+                            <th>Permanent Position</th>
+                            <th>Internship</th>
+                            <th>Paid</th>
+                            <th>Apply Now</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <repeat group="{{ @jobs }}" value="{{ @job }}">
                             <tr>
-                                <th>Delete</th>
-                                <th>Title</th>
-                                <th>Employment Status</th>
-                                <th>Company</th>
-                                <th>Category</th>
-                                <th>Location</th>
-                                <th>Date Posted</th>
-                                <th>Expires</th>
-                                <th>Permanent Position</th>
-                                <th>Internship</th>
-                                <th>Paid</th>
-                                <th>Apply Now</th>
+                                <td>{{ @job.job_title }}</td>
+                                <td>{{ @job.status }}</td>
+                                <td>{{ @job.company_name }}</td>
+                                <td>{{ @job.category }}</td>
+                                <td>{{ @job.location }}</td>
+                                <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
+                                <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
+                                <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
+                                <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
+                                <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
+
+                                <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
+
                             </tr>
-                        </thead>
+                        </repeat>
+                    </tbody>
 
-                        <tbody>
-                            <repeat group="{{ @jobs }}" value="{{ @job }}">
-                                <tr>
-                                    <td>{{ @job.job_title }}</td>
-                                    <td>{{ @job.status }}</td>
-                                    <td>{{ @job.company_name }}</td>
-                                    <td>{{ @job.category }}</td>
-                                    <td>{{ @job.location }}</td>
-                                    <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
-                                    <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
-                                    <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
-                                    <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
-                                    <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
-
-                                    <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
-
-                                </tr>
-                            </repeat>
-                        </tbody>
-
-                    <?php echo "Check" ?>
-                    <?php else: ?>
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Employment Status</th>
-                                <th>Company</th>
-                                <th>Category</th>
-                                <th>Location</th>
-                                <th>Date Posted</th>
-                                <th>Expires</th>
-                                <th>Permanent Position</th>
-                                <th>Internship</th>
-                                <th>Paid</th>
-                                <th>Apply Now</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <repeat group="{{ @jobs }}" value="{{ @job }}">
-                                <tr>
-                                    <td>{{ @job.job_title }}</td>
-                                    <td>{{ @job.status }}</td>
-                                    <td>{{ @job.company_name }}</td>
-                                    <td>{{ @job.category }}</td>
-                                    <td>{{ @job.location }}</td>
-                                    <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
-                                    <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
-                                    <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
-                                    <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
-                                    <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
-
-                                    <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
-
-                                </tr>
-                            </repeat>
-                        </tbody>
-                    <?php endif; ?>
+                    
                 </table>
             </div>
         </div>
     </div>
 </div>
 
-<include href="views/modules/footer.php"></include>
+<include href="views/modules/footer.html"></include>

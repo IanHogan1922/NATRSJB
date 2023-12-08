@@ -190,7 +190,8 @@ class DataLayer
 
         // Return the result
         if ($result) {
-            $_SESSION['token'] = $result[0]['token'];
+            $_SESSION['admin'] = true;
+            //echo $result[0]['token'];
             return true;
         }
         return false;
@@ -204,6 +205,41 @@ class DataLayer
     function getOthers() {
         $others = array("Permanent", "Internship", "Paid");
         return $others;
+    }
+
+    function userInfo()
+    {
+        // Check if logged in
+        if (!isset($_SESSION['token'])) {
+            return false;
+        }
+
+        // Get the account from the database
+        $sql = "SELECT * FROM admin WHERE token = :token";
+
+        // Prepare the statement
+        $statement = $this->_dbh->prepare($sql);
+
+        // Bind the parameters
+        $statement->bindParam(':token', $_SESSION['token'], PDO::PARAM_STR);
+
+        // Execute
+        $statement->execute();
+
+        // Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result
+        if ($result) {
+            return $result[0];
+        }
+
+        return false;
+    }
+
+    function isAdmin() {
+
+        return isset($_SESSION['admin']) ? $_SESSION['admin'] : false;
     }
 
 }

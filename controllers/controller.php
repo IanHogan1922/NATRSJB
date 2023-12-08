@@ -5,9 +5,12 @@ use classes\announcement;
 
 class Controller {
     private $_f3;
+    private $admin; //= isset($_SESSION['admin']);
 
     function __construct($f3) {
         $this->_f3 = $f3;
+        $this->admin = $GLOBALS['dataLayer']->isAdmin();
+        $this->_f3->set('admin', $this->admin);
     }
 
     function home() {
@@ -88,7 +91,7 @@ class Controller {
 
             if ($GLOBALS['dataLayer']->signIn($email, $password)) {
                 echo 'Sign in successful!';
-//                $f3->reroute('/');
+                $this->_f3->set('admin', true);
             } else {
                 echo 'Sign in failed!';
             }
@@ -96,5 +99,11 @@ class Controller {
 
         $view = new Template();
         echo $view->render('views/login.html');
+    }
+
+    function logout()
+    {
+        session_destroy();
+        $this->_f3->reroute('/');
     }
 }
