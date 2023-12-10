@@ -14,6 +14,9 @@ class Controller {
     }
 
     function home() {
+
+        $this->_f3->set('title', "Job Board");
+
         $jobs = $GLOBALS['dataLayer']->getJobs();
         $this->_f3->set('jobs', $jobs);
 
@@ -23,6 +26,7 @@ class Controller {
 
     function announcements() {
 
+        $this->_f3->set('title', "Announcements");
         // Get data
         $announcements = $GLOBALS['dataLayer']->getAnnouncements();
         $this->_f3->set('announcements', $announcements);
@@ -32,6 +36,8 @@ class Controller {
     }
 
     function dataEntry() {
+
+        $this->_f3->set('title', "New Job");
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -66,6 +72,8 @@ class Controller {
 
     function newAnnouncement() {
 
+        $this->_f3->set('title', "New Announcement");
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $title = $_REQUEST['title'];
@@ -81,8 +89,10 @@ class Controller {
         echo $view->render('views/newAnnouncement.html');
     }
 
-    function logIn()
-    {
+    function logIn() {
+
+        $this->_f3->set('title', "Admin Login");
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Get the form data
             $email = $_REQUEST['email'];

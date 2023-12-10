@@ -2129,3 +2129,16 @@ Stack trace:
 [08-Dec-2023 07:10:33 UTC] [NATRSJB/model/data-layer.php:45] 
 [08-Dec-2023 07:38:13 UTC] HTTP 404 (GET /logout)
 [08-Dec-2023 07:38:13 UTC] [NATRSJB/index.php:104] Base->run()
+[08-Dec-2023 08:57:40 UTC] implode(): Invalid arguments passed
+[08-Dec-2023 08:57:40 UTC] [NATRSJB/controllers/controller.php:42] 
+[08-Dec-2023 08:57:40 UTC] [NATRSJB/controllers/controller.php:42] implode()
+[08-Dec-2023 08:57:40 UTC] [NATRSJB/index.php:30] Controller->dataEntry()
+[08-Dec-2023 08:57:40 UTC] [NATRSJB/index.php:56] Base->run()
+[08-Dec-2023 08:57:49 UTC] HTTP 404 (GET /Array/hide/26)
+[08-Dec-2023 08:57:49 UTC] [NATRSJB/index.php:56] Base->run()
+[08-Dec-2023 08:57:57 UTC] HTTP 404 (GET /Array/hide/26)
+[08-Dec-2023 08:57:57 UTC] [NATRSJB/index.php:56] Base->run()
+[08-Dec-2023 09:06:38 UTC] HTTP 404 (GET /Array/hide/26)
+[08-Dec-2023 09:06:38 UTC] [NATRSJB/index.php:56] Base->run()
+[08-Dec-2023 09:08:52 UTC] HTTP 404 (GET /Array/hide/3)
+[08-Dec-2023 09:08:52 UTC] [NATRSJB/index.php:56] Base->run()
