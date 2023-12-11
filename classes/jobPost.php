@@ -16,16 +16,16 @@ class jobPost {
     private $paid;
 
     /**
-     * @param $title
-     * @param $status
-     * @param $company
-     * @param $category
-     * @param $date
-     * @param $location
-     * @param $expiration
-     * @param $permanent
-     * @param $internship
-     * @param $paid
+     * @param string $title The title of the job post.
+     * @param bool $status The current status of the job post.
+     * @param string $company The company that offered the job posting.
+     * @param string $category The category of the job post.
+     * @param int $date The date the job was posted.
+     * @param string $location The job's location.
+     * @param string $expiration The expiration date of the job post.
+     * @param bool $permanent If the job post is a permanent position.
+     * @param bool $internship If the job post is an internship.
+     * @param bool $paid If the job is paid or not.
      */
     public function __construct($title, $status, $company, $category, $date, $location, $expiration, $permanent, $internship, $paid)
     {
@@ -42,7 +42,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the title of the job post.
+     * @return string The title of the job post.
      */
     public function getTitle()
     {
@@ -50,7 +51,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $title
+     * Sets the title of the job post.
+     * @param string $title The title of the job post.
      */
     public function setTitle($title)
     {
@@ -58,7 +60,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the status of the job posting, true if the job is active, false otherwise.
+     * @return bool The status of the job post.
      */
     public function getStatus()
     {
@@ -66,7 +69,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $status
+     * Sets the status of the job posting, true if the job is active, false otherwise.
+     * @param bool $status Sets the status of the job post.
      */
     public function setStatus($status)
     {
@@ -74,7 +78,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the company that is offering the job posting.
+     * @return string The company that is offering the job post.
      */
     public function getCompany()
     {
@@ -82,7 +87,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $company
+     * Sets the company that is offering the job posting.
+     * @param string $company The company that is offering the job post.
      */
     public function setCompany($company)
     {
@@ -90,7 +96,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the category of the job posting.
+     * @return string The category of the job post.
      */
     public function getCategory()
     {
@@ -98,7 +105,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $category
+     * Sets the category of the job posting.
+     * @param string $category The category of the job post.
      */
     public function setCategory($category)
     {
@@ -106,7 +114,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the date of the job posting
+     * @return int The date of the job posting
      */
     public function getDate()
     {
@@ -114,7 +123,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $date
+     * Sets the date of the job posting
+     * @param int $date The date of the job posting.
      */
     public function setDate($date)
     {
@@ -122,7 +132,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the location of the job posting.
+     * @return string The location of the job post.
      */
     public function getLocation()
     {
@@ -130,7 +141,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $location
+     * Sets the location of the job posting.
+     * @param string $location The location of the job post.
      */
     public function setLocation($location)
     {
@@ -138,7 +150,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the expiration date of the job posting.
+     * @return string The expiration date of the job post.
      */
     public function getExpiration()
     {
@@ -146,7 +159,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $expiration
+     * Sets the expiration date of the job posting.
+     * @param string $expiration The expiration date of the job post.
      */
     public function setExpiration($expiration)
     {
@@ -154,7 +168,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the permanent status of the job posting (e.g. Is it a permanent job or not).
+     * @return bool The type status of the job post (e.g. Is it a permanent job or not).
      */
     public function getPermanent()
     {
@@ -162,7 +177,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $permanent
+     * Sets the permanent status of the job posting (e.g. True if permanent job, false otherwise).
+     * @param bool $permanent The type status of the job post.
      */
     public function setPermanent($permanent)
     {
@@ -170,7 +186,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the internship status of the job posting (e.g. Is it an internship job or not).
+     * @return bool The internship status of the job post.
      */
     public function getInternship()
     {
@@ -178,7 +195,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $internship
+     * Sets the internship status, true if the job posting is an internship, false otherwise.
+     * @param bool $internship The internship status of the job post.
      */
     public function setInternship($internship)
     {
@@ -186,7 +204,8 @@ class jobPost {
     }
 
     /**
-     * @return mixed
+     * Gets the pay status of the job posting, true if paid position, false otherwise.
+     * @return bool The pay status of the job post.
      */
     public function getPaid()
     {
@@ -194,7 +213,8 @@ class jobPost {
     }
 
     /**
-     * @param mixed $paid
+     * Sets the pay status of the job posting, true if paid position, false otherwise.
+     * @param bool $paid The pay status of the job post.
      */
     public function setPaid($paid)
     {
