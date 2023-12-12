@@ -340,6 +340,10 @@ label:hover input[type="checkbox"] {
     width: 2000px;
 }
 
+.login-button {
+    background-color: #4CAF50 !important;
+}
+
 #hiddenContent {
     /* Creates a rounded boarder around the keyword filter pop-up box*/
     display: none;

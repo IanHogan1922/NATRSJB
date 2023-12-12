@@ -129,6 +129,7 @@ class Controller {
             if ($GLOBALS['dataLayer']->signIn($email, $password)) {
                 echo 'Sign in successful!';
                 $this->_f3->set('admin', true);
+                $this->_f3->reroute('/');
             } else {
                 echo 'Sign in failed!';
             }
