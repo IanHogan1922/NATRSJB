@@ -120,7 +120,7 @@
                                 <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
                                 <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
 
-                                <td><a href='{{ @job.url_link }}' target='_blank'>Apply</a></td>
+                                <td><a href='{{ @job.url_link }}' class="apply-button" target='_blank'>Apply</a></td>
 
                             </tr>
                         </repeat>
