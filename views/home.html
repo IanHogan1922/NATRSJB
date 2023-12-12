@@ -121,31 +121,32 @@
                                 <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
 
                                 <td><a href='{{ @job.url_link }}' class="apply-button" target='_blank'>Apply</a></td>
-                            <tfoot>
-                                <check if="{{ @admin != false }}">
-                                    <true>
-                                        <tr>
-                                            <td colspan="2">
-                                                <!-- Single button outside the loop to hide all selected jobs -->
-                                                <form action="/hideJob" method="post">
-                                                    <input type="hidden" name="job_number" value="{{ @job.job_number }}">
-                                                    <button type="submit" style="color: red;">
-                                                        <i class="fa fa-scissors" aria-hidden="true"></i> Hide Job
-                                                    </button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    </true>
-                                    <false>
 
-                                    </false>
-                                </check>
-
-                            </tfoot>
 
                             </tr>
                         </repeat>
                     </tbody>
+                    <tfoot>
+                    <check if="{{ @admin != false }}">
+                        <true>
+                            <tr>
+                                <td colspan="2">
+                                    <!-- Single button outside the loop to hide all selected jobs -->
+                                    <form action="/hideJob" method="post">
+                                        <input type="hidden" name="job_number" value="{{ @job.job_number }}">
+                                        <button type="submit" style="color: red;">
+                                            <i class="fa fa-scissors" aria-hidden="true"></i> Hide Job
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </true>
+                        <false>
+
+                        </false>
+                    </check>
+
+                    </tfoot>
 
                     
                 </table>
