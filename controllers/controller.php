@@ -8,7 +8,8 @@
 use classes\job;
 use classes\announcement;
 
-class Controller {
+class Controller
+{
     //fields
     private $_f3;
     private $admin; //= isset($_SESSION['admin']);
@@ -20,7 +21,8 @@ class Controller {
         $this->_f3->set('admin', $this->admin);
     }
 
-    function home() {
+    function home()
+    {
         //Set the title of the home page to "Job Board".
         $this->_f3->set('title', "Job Board");
 
@@ -35,14 +37,15 @@ class Controller {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST')
         {
-            $jobNumber = $_POST['job_number'];
+            $jobNumbers = $_POST['jobs_to_hide'];
             // Call hideJob function
-            hideJob($jobNumber);
-
+            $GLOBALS['dataLayer']->hideJobs($jobNumbers);
+            $this->_f3->reroute('/');
         }
     }
 
-    function announcements() {
+    function announcements()
+    {
         // Set the title of the announcement view to "Announcements".
         $this->_f3->set('title', "Announcements");
         // Retrieves a list of announcements from the data layer.
@@ -55,74 +58,86 @@ class Controller {
         echo $view->render('views/announcements.html');
     }
 
-    function dataEntry() {
-        //Set the title of the page to "New Job".
-        $this->_f3->set('title', "New Job");
+    function dataEntry()
+    {
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
+            //Set the title of the page to "New Job".
+            $this->_f3->set('title', "New Job");
 
-        //Check if the form has been submitted via a POST Request.
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            //Retrieves form data for new job entry.
-            $title = $_REQUEST['title'];
-            $status = $_REQUEST['status'];
-            $company = $_REQUEST['company'];
-            //Categories might be an array, so we implode it to a string seperated by commas.
-            $category = $_REQUEST['category'];
-            $category = implode(", ", $category);
-            $location = $_REQUEST['location'];
-            $expiration = $_REQUEST['expiration'];
-            //Checkboxes for job attributes, defaulting to 0 if not set.
-            $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
-            $internship = isset($_REQUEST['internship']) ? 1 : 0;
-            $paid = isset($_REQUEST['paid']) ? 1 : 0;
-            $url = $_REQUEST['url'];
-            $visibility = 1;
+            //Check if the form has been submitted via a POST Request.
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                //Retrieves form data for new job entry.
+                $title = $_REQUEST['title'];
+                $status = $_REQUEST['status'];
+                $company = $_REQUEST['company'];
+                //Categories might be an array, so we implode it to a string seperated by commas.
+                $category = $_REQUEST['category'];
+                $category = implode(", ", $category);
+                $location = $_REQUEST['location'];
+                $expiration = $_REQUEST['expiration'];
+                //Checkboxes for job attributes, defaulting to 0 if not set.
+                $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
+                $internship = isset($_REQUEST['internship']) ? 1 : 0;
+                $paid = isset($_REQUEST['paid']) ? 1 : 0;
+                $url = $_REQUEST['url'];
+                $visibility = 1;
 
-            //Creates a new job object with the form data.
-            $newJob = new job($title, $status, $company, $category, $location,
-                $expiration, $permanent, $internship, $paid, $url, $visibility);
+                //Creates a new job object with the form data.
+                $newJob = new job($title, $status, $company, $category, $location,
+                    $expiration, $permanent, $internship, $paid, $url, $visibility);
 
-            // Add the new job to the database using the data layer.
-            $GLOBALS['dataLayer']->addJob($newJob);
+                // Add the new job to the database using the data layer.
+                $GLOBALS['dataLayer']->addJob($newJob);
+            }
+            // Retrieves categories from the data layer for selection within the form options.
+            $categories = $GLOBALS['dataLayer']->getCategories();
+            $this->_f3->set('categories', $categories);
+
+            // Retrieve other data needed for the form.
+            $others = $GLOBALS['dataLayer']->getOthers();
+            $this->_f3->set('others', $others);
+
+            //Creates new template object and renders the view/dataEntry page.
+            $view = new Template();
+            echo $view->render('views/dataEntry.html');
+        } else {
+            $this->_f3->reroute('/');
         }
-        // Retrieves categories from the data layer for selection within the form options.
-        $categories = $GLOBALS['dataLayer']->getCategories();
-        $this->_f3->set('categories', $categories);
-
-        // Retrieve other data needed for the form.
-        $others = $GLOBALS['dataLayer']->getOthers();
-        $this->_f3->set('others', $others);
-
-        //Creates new template object and renders the view/dataEntry page.
-        $view = new Template();
-        echo $view->render('views/dataEntry.html');
     }
 
-    function newAnnouncement() {
-        //Set the title of the page to "New Announcement".
-        $this->_f3->set('title', "New Announcement");
+    function newAnnouncement()
+    {
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
 
-        //Checks that the request method is POSTed.
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            //Set the title of the page to "New Announcement".
+            $this->_f3->set('title', "New Announcement");
 
-            //Retrieves the title and description from the POSTed data.
-            $title = $_REQUEST['title'];
-            $description = $_REQUEST['description'];
-            //Sets the default visibility for new announcements to 1.
-            $visibility = 1;
+            //Checks that the request method is POSTed.
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-            //Create a new announcement object with the data provided.
-            $newAnnouncement = new announcement($title, $description, $visibility);
+                //Retrieves the title and description from the POSTed data.
+                $title = $_REQUEST['title'];
+                $description = $_REQUEST['description'];
+                //Sets the default visibility for new announcements to 1.
+                $visibility = 1;
 
-            // Add the new announcement to the database through the data layer.
-            $GLOBALS['dataLayer']->addAnnouncement($newAnnouncement);
+                //Create a new announcement object with the data provided.
+                $newAnnouncement = new announcement($title, $description, $visibility);
+
+                // Add the new announcement to the database through the data layer.
+                $GLOBALS['dataLayer']->addAnnouncement($newAnnouncement);
+            }
+
+            //Creates new template object and renders the view/newAnnouncement page.
+            $view = new Template();
+            echo $view->render('views/newAnnouncement.html');
+        } else {
+            $this->_f3->reroute('/');
         }
-
-        //Creates new template object and renders the view/newAnnouncement page.
-        $view = new Template();
-        echo $view->render('views/newAnnouncement.html');
     }
 
-    function logIn() {
+    function logIn()
+    {
         // Set the title of the log-in screen to Admin Login.
         $this->_f3->set('title', "Admin Login");
 
@@ -131,7 +146,6 @@ class Controller {
             // Retrieves the email and password from the POSTed form submission.
             $email = $_REQUEST['email'];
             $password = $_REQUEST['password'];
-
 
             // Validating the user sign-in credentials
             if ($GLOBALS['dataLayer']->signIn($email, $password)) {
@@ -153,6 +167,88 @@ class Controller {
         session_destroy();
         //Reroute to the default route in the site.
         $this->_f3->reroute('/');
+    }
+
+    public function editINPROGRESS($id)
+    {
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
+
+            $this->_f3->set('title', "Edit Job");
+
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                //log the user in
+                $job = $GLOBALS['dataLayer']->updateJob($job);
+
+            }
+            $job = $GLOBALS['dataLayer']->getSingleJob($id);
+            echo $job;
+            $this->_f3->set('jobEdit', $job);
+            $view = new Template();
+            echo $view->render('views/jobEdit.html');
+        } else {
+            $this->_f3->reroute('/');
+        }
+    }
+
+    public function hide($id)
+    {
+
+
+        //send post data to the model
+        $GLOBALS['dataLayer']->hideJob($id);
+        header("Location: /");
+    }
+
+    function edit($id)
+    {
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
+
+            //Set the title of the page to "Edit Job Post".
+            $this->_f3->set('title', "Edit Job Post");
+
+            $jobEdit = $GLOBALS['dataLayer']->getJobById($id);
+            $this->_f3->set('jobEdit', $jobEdit);
+
+            //Check if the form has been submitted via a POST Request.
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                //Retrieves form data for new job entry.
+                $title = $_REQUEST['title'];
+                $status = $_REQUEST['status'];
+                $company = $_REQUEST['company'];
+                //Categories might be an array, so we implode it to a string seperated by commas.
+                $category = $_REQUEST['category'];
+                $category = implode(", ", $category);
+                $location = $_REQUEST['location'];
+                $expiration = $_REQUEST['expiration'];
+                //Checkboxes for job attributes, defaulting to 0 if not set.
+                $permanent = isset($_REQUEST['permanent']) ? 1 : 0;
+                $internship = isset($_REQUEST['internship']) ? 1 : 0;
+                $paid = isset($_REQUEST['paid']) ? 1 : 0;
+                $url = $_REQUEST['url'];
+                $visibility = 1;
+
+                //Creates a new job object with the form data.
+                $jobEdit = new job($title, $status, $company, $category, $location,
+                    $expiration, $permanent, $internship, $paid, $url, $visibility);
+
+                // Add the new job to the database using the data layer.
+                $GLOBALS['dataLayer']->updateJob($jobEdit, $id);
+                $this->_f3->reroute('/');
+            }
+            // Retrieves categories from the data layer for selection within the form options.
+            $categories = $GLOBALS['dataLayer']->getCategories();
+            $this->_f3->set('categories', $categories);
+
+            // Retrieve other data needed for the form.
+            $others = $GLOBALS['dataLayer']->getOthers();
+            $this->_f3->set('others', $others);
+
+            //Creates new template object and renders the view/dataEntry page.
+            $view = new Template();
+            echo $view->render('views/jobEdit.html');
+        } else {
+            $this->_f3->reroute('/');
+        }
     }
 
 }

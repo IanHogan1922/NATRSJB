@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <include href="views/modules/header.html"></include>
 
 <script src="scripts/newJobBoard.js"></script>
@@ -69,88 +65,75 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="table-responsive">
-                <table id="jobs-table">
-                    
-                    <thead>
-                        <tr>
-                            <check if="{{ @admin != false }}">
-                                <true>
-                                    <th>Delete Entry</th>
-                                </true>
-                                <false>
-
-                                </false>
-                            </check>
-                            <th>Title</th>
-                            <th>Employment Status</th>
-                            <th>Company</th>
-                            <th>Category</th>
-                            <th>Location</th>
-                            <th>Date Posted</th>
-                            <th>Expires</th>
-                            <th>Permanent Position</th>
-                            <th>Internship</th>
-                            <th>Paid</th>
-                            <th>Apply Now</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <repeat group="{{ @jobs }}" value="{{ @job }}">
+            <form action="" method="post">
+                
+                <div class="table-responsive">
+                    <table id="jobs-table">
+                        <thead>
                             <tr>
                                 <check if="{{ @admin != false }}">
                                     <true>
-                                        <td id="delete" class="center-text">
-                                            <input type="checkbox" name="selected_jobs[]" value="{{ @job.job_number }}">
-                                        </td>
+                                        <th>Delete</th>
+                                        <th>Edit</th>
                                     </true>
-                                    <false>
-
-                                    </false>
+                                    <false></false>
                                 </check>
-                                <td>{{ @job.job_title }}</td>
-                                <td>{{ @job.status }}</td>
-                                <td>{{ @job.company_name }}</td>
-                                <td>{{ @job.category }}</td>
-                                <td>{{ @job.location }}</td>
-                                <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
-                                <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
-                                <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
-                                <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
-                                <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
-
-                                <td><a href='{{ @job.url_link }}' class="apply-button" target='_blank'>Apply</a></td>
-
-
+                                <th>Title</th>
+                                <th>Employment Status</th>
+                                <th>Company</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Date Posted</th>
+                                <th>Expires</th>
+                                <th>Permanent Position</th>
+                                <th>Internship</th>
+                                <th>Paid</th>
+                                <th>Apply Now</th>
                             </tr>
-                        </repeat>
-                    </tbody>
-                    <tfoot>
-                    <check if="{{ @admin != false }}">
-                        <true>
-                            <tr>
-                                <td colspan="2">
-                                    <!-- Single button outside the loop to hide all selected jobs -->
-                                    <form action="/hideJob" method="post">
-                                        <input type="hidden" name="job_number" value="{{ @job.job_number }}">
-                                        <button type="submit" style="color: red;">
-                                            <i class="fa fa-scissors" aria-hidden="true"></i> Hide Job
-                                        </button>
-                                    </form>
-                                </td>
-                            </tr>
-                        </true>
-                        <false>
-
-                        </false>
-                    </check>
-
-                    </tfoot>
-
-                    
-                </table>
-            </div>
+                        </thead>
+    
+                        <tbody>
+                            <repeat group="{{ @jobs }}" value="{{ @job }}">
+                                <tr>
+                                    <check if="{{ @admin != false }}">
+                                        <true>
+                                            <input type="hidden" name="job_number" value="{{ @job.job_number }}">
+                                            <td id="delete" class="center-text">
+                                                <input type="checkbox" name="jobs_to_hide[]" value="{{ @job.job_number }}">
+                                            </td>
+                                            <td>
+                                                <a href="/NATRSJB/edit.php?id={{ @job.job_number }}">Edit</a>
+                                            </td>
+                                        </true>
+                                        <false></false>
+                                    </check>
+                                    <td>{{ @job.job_title }}</td>
+                                    <td>{{ @job.status }}</td>
+                                    <td>{{ @job.company_name }}</td>
+                                    <td>{{ @job.category }}</td>
+                                    <td>{{ @job.location }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.post_date)) }}</td>
+                                    <td>{{ date('M j, Y', strtotime(@job.expiration)) }}</td>
+                                    <td>{{ (@job.permanent == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.internship == 1) ? "Yes" : "No" }}</td>
+                                    <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
+    
+                                    <td><a href='{{ @job.url_link }}' class="apply-button" target='_blank'>Apply</a></td>
+                                </tr>
+                            </repeat>
+                        </tbody>
+                    </table>
+                </div>
+                <check if="{{ @admin != false }}">
+                    <true>
+                        <!-- Single button outside the loop to hide all selected jobs -->
+                        <button type="submit" style="color: red;">
+                            <i class="fa fa-scissors" aria-hidden="true"></i> Hide Selected Jobs
+                        </button>
+                    </true>
+                    <false></false>
+                </check>
+            </form>
         </div>
     </div>
 </div>

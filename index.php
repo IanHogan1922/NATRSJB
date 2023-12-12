@@ -19,7 +19,7 @@ $f3 = Base::instance();
 $controller = new Controller($f3);
 
 //Define a default route
-$f3->route('GET /', function() {
+$f3->route('GET|POST /', function() {
 
     $GLOBALS['controller']->home();
 
@@ -34,6 +34,7 @@ $f3->route('GET|POST /add_jobs', function() {
 $f3->route('GET /announcements', function() {
 
     $GLOBALS['controller']->announcements();
+
 });
 
 $f3->route('GET|POST /newAnnouncement', function() {
@@ -51,6 +52,13 @@ $f3->route('GET|POST /login', function() {
 });
 
 $f3->route('GET /logout', [$controller, 'logout']);
+
+$f3->route('GET|POST /edit.@id', function() {
+
+    $GLOBALS['controller']->edit($_GET['id']);
+
+});
+
 
 //Run fat free
 $f3->run();

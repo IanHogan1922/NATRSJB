@@ -148,13 +148,72 @@ class DataLayer
         }
     }
 
-    function hideJob($jobNumber) {
-        $sql = "UPDATE jobboard2 SET visibility = 0 WHERE job_number = :job_number";
-        $statement = $this->_dbh->prepare($sql);
-        $statement->bindParam(':job_number', $jobNumber, PDO::PARAM_INT);
-        $result = $statement->execute();
+    function hideJobs($jobNumbers) {
+        foreach ($jobNumbers as $jobNumber) {
+            $sql = "UPDATE jobboard2 SET visibility = 0 WHERE job_number = :job_number";
+            $statement = $this->_dbh->prepare($sql);
+            $statement->bindParam(':job_number', $jobNumber, PDO::PARAM_INT);
+            $result = $statement->execute();
+        }
 
         return $result;
+    }
+
+    function getJobById($id)
+    {
+
+        $sql = "SELECT * FROM jobboard2 WHERE job_number=:id";
+
+        $statement = $this->_dbh->prepare($sql);
+
+        $statement->bindValue(':id', $id);
+        $statement->execute();
+
+        $row = $statement->fetch(PDO::FETCH_ASSOC);
+        return $row;
+    }
+
+    function updateJob($jobEdit, $id) {
+        $statement = 'UPDATE jobboard2 SET job_title=:title, status=:status, company_name=:company, 
+                     category=:category, location=:location, expiration=:expiration, 
+                     permanent=:permanent, internship=:internship, paid=:paid, 
+                     url_link=:url WHERE job_number=:id';
+
+        $statement = $this->_dbh->prepare($statement);
+
+        // Bind the parameters
+        $title = $jobEdit->getTitle();
+        $status = $jobEdit->getStatus();
+        $company = $jobEdit->getCompany();
+        $category = $jobEdit->getCategory();
+        $location = $jobEdit->getLocation();
+        $expiration = $jobEdit->getExpiration();
+        $permanent = $jobEdit->getPermanent();
+        $internship = $jobEdit->getInternship();
+        $paid = $jobEdit->getPaid();
+        $url = $jobEdit->getUrl();
+
+        $statement->bindParam(':title', $title);
+        $statement->bindParam(':status', $status);
+        $statement->bindParam(':company', $company);
+        $statement->bindParam(':category', $category);
+        $statement->bindParam(':location', $location);
+        $statement->bindParam(':expiration', $expiration);
+        $statement->bindParam(':permanent', $permanent);
+        $statement->bindParam(':internship', $internship);
+        $statement->bindParam(':paid', $paid);
+        $statement->bindParam(':url', $url);
+        $statement->bindParam(':id', $id);
+
+        $statement->execute();
+
+        // Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result
+        if ($result) {
+            echo "Fail";
+        }
     }
 
     function signIn($email, $password) {
