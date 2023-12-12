@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,17 +15,20 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <link rel="icon" href="pictures/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="js/dynamic-nav.js"></script>
+    
 </head>
 <body>
 
 <header>
     <div class="image-container">
         <img src="pictures/helmet-newstickersupercrop.jpg" alt="Helmet Image" class="main-image">
-        <img src="pictures/GRC_Logo_White.png" alt="GRC logo" class="upper-left-image">
+        <a href="https://www.greenriver.edu/">
+            <img src="pictures/GRC_Logo_White.png" alt="GRC logo" class="upper-left-image">
+        </a>
         <div class="text-overlay">
             <h1>Natural Resources</h1>
-            <p>Job Board</p>
+            <p>{{ @title }}</p>
         </div>
     </div>
     <nav class="navbar navbar-default">
@@ -46,14 +45,14 @@
                 <li><a href="/NATRSJB" id="home-link" target="_self">All Jobs</a></li>
                 <li><a href="https://www.greenriver.edu/students/academics/degrees-programs/natural-resources/"
                        target="_blank" >GRC NATRS Home page</a></li>
-                <li><a href="announcements">Announcements</a></li>
+                <li><a href="announcements" id="announcements-link">Announcements</a></li>
                 
                     <!-- Show these links only when the user is logged in -->
                 
                 <check if="{{ @admin != false }}">
                     <true>
-                        <li><a href="add_jobs">New Job Form</a></li>
-                        <li><a href="newAnnouncement">New Announcement</a></li>
+                        <li><a href="add_jobs" id="newJob-link">New Job Form</a></li>
+                        <li><a href="newAnnouncement" id="newAnnouncement-link">New Announcement</a></li>
                     </true>
                     <false>
                     

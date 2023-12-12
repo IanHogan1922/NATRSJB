@@ -10,6 +10,11 @@ header {
     position: relative;
 }
 
+#myNavbar a.current {
+    color: rgb(44, 135, 43);
+    font-weight: bold !important;
+}
+
 .footer hr {
     margin: 0 0 10px;
 }
