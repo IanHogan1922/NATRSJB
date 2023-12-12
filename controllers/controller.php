@@ -32,6 +32,14 @@ class Controller {
         //Creates new template object and renders the view/home page.
         $view = new Template();
         echo $view->render('views/home.html');
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST')
+        {
+            $jobNumber = $_POST['job_number'];
+            // Call hideJob function
+            hideJob($jobNumber);
+
+        }
     }
 
     function announcements() {
@@ -146,4 +154,5 @@ class Controller {
         //Reroute to the default route in the site.
         $this->_f3->reroute('/');
     }
+
 }

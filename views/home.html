@@ -101,9 +101,15 @@
                             <tr>
                                 <check if="{{ @admin != false }}">
                                     <true>
+                                        <form action="/hideJob" method="post">
+                                            <input type="hidden" name="job_number" value="{{ @job.job_number }}">
+                                            <button type="submit" style="color: red;">
+                                                <i class="fa fa-scissors" aria-hidden="true"></i> Hide Job
+                                            </button>
+                                        </form>
                                         <td id="delete" class="center-text">
-                                            <a style="color:red;" href="{{ @job }}/hideJob/{{ @job.job_number }}"
-                                               target="_self"><i class="fa fa-scissors" aria-hidden="true"></i></a></td>
+                                            <input type="checkbox" name="selected_jobs[]" value="{{ @job.job_number }}">
+                                        </td>
                                     </true>
                                     <false>
 
@@ -121,6 +127,16 @@
                                 <td>{{ (@job.paid == 1) ? "Yes" : "No" }}</td>
 
                                 <td><a href='{{ @job.url_link }}' class="apply-button" target='_blank'>Apply</a></td>
+                                <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <!-- Single button outside the loop to hide all selected jobs -->
+                                    <button type="submit" style="color: red;">
+                                        <i class="fa fa-scissors" aria-hidden="true"></i> Hide Selected Jobs
+                                    </button>
+                                </td>
+                            </tr>
+                            </tfoot>
 
                             </tr>
                         </repeat>
