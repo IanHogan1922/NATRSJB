@@ -46,6 +46,10 @@ class DataLayer
 
     function getJobs() {
 
+        $sql = "UPDATE jobboard2 SET visibility = '0' WHERE expiration < CURDATE()";
+        $statement = $this->_dbh->prepare($sql);
+        $statement->execute();
+
         // Define the query (test first!)
         $sql = "SELECT * FROM jobboard2 WHERE visibility != 0";
 
