@@ -59,6 +59,12 @@ $f3->route('GET|POST /edit.@id', function() {
 
 });
 
+$f3->route('GET|POST /deleteAnnouncement.@id', function() {
+
+    $GLOBALS['controller']->deleteAnnouncement($_GET['id']);
+
+});
+
 
 //Run fat free
 $f3->run();

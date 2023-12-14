@@ -2855,3 +2855,23 @@ Stack trace:
 [12-Dec-2023 13:45:42 UTC] [NATRSJB/index.php:19] spl_autoload_call()
 [12-Dec-2023 13:59:25 UTC] HTTP 405 (POST /)
 [12-Dec-2023 13:59:25 UTC] [NATRSJB/index.php:64] Base->run()
+[14-Dec-2023 22:57:13 UTC] HTTP 404 (GET /deleteAnnouncement.php?id=5)
+[14-Dec-2023 22:57:13 UTC] [NATRSJB/index.php:64] Base->run()
+[14-Dec-2023 22:58:35 UTC] Invalid argument supplied for foreach()
+[14-Dec-2023 22:58:35 UTC] [NATRSJB/model/data-layer.php:163] 
+[14-Dec-2023 22:58:35 UTC] [NATRSJB/model/data-layer.php:163] Base->{closure}()
+[14-Dec-2023 22:58:35 UTC] [NATRSJB/controllers/controller.php:203] DataLayer->hideAnnouncement()
+[14-Dec-2023 22:58:35 UTC] [NATRSJB/index.php:64] Controller->deleteAnnouncement()
+[14-Dec-2023 22:58:35 UTC] [NATRSJB/index.php:70] Base->run()
+[14-Dec-2023 23:00:11 UTC] Invalid argument supplied for foreach()
+[14-Dec-2023 23:00:11 UTC] [NATRSJB/model/data-layer.php:163] 
+[14-Dec-2023 23:00:11 UTC] [NATRSJB/model/data-layer.php:163] Base->{closure}()
+[14-Dec-2023 23:00:11 UTC] [NATRSJB/controllers/controller.php:203] DataLayer->hideAnnouncement()
+[14-Dec-2023 23:00:11 UTC] [NATRSJB/index.php:64] Controller->deleteAnnouncement()
+[14-Dec-2023 23:00:11 UTC] [NATRSJB/index.php:70] Base->run()
+[14-Dec-2023 23:01:26 UTC] Invalid argument supplied for foreach()
+[14-Dec-2023 23:01:26 UTC] [NATRSJB/model/data-layer.php:163] 
+[14-Dec-2023 23:01:26 UTC] [NATRSJB/model/data-layer.php:163] Base->{closure}()
+[14-Dec-2023 23:01:26 UTC] [NATRSJB/controllers/controller.php:203] DataLayer->hideAnnouncement()
+[14-Dec-2023 23:01:26 UTC] [NATRSJB/index.php:64] Controller->deleteAnnouncement()
+[14-Dec-2023 23:01:26 UTC] [NATRSJB/index.php:70] Base->run()

@@ -13,10 +13,10 @@
                         <option value="Seasonal">Seasonal</option>
                     </select>
                 </p>
-                <p>Company Name: <input placeholder="Company Name" type="text" name="company"  value="{{ @jobEdit.company_name }}"></p>
-                <p>Location: <input placeholder="Location" type="text" name="location"  value="{{ @jobEdit.location }}"></p>
+                <p>Company Name: <input placeholder="Company Name" type="text" name="company"  value="{{ @jobEdit.company_name }}" required></p>
+                <p>Location: <input placeholder="Location" type="text" name="location"  value="{{ @jobEdit.location }}" required></p>
                 <p>Post Expiration: <input type="date" name="expiration"  value="{{ @jobEdit.expiration }}" required></p>
-                <p>Posting URL: <input placeholder="Web Link" type="text" name="url" value="{{ @jobEdit.url_link }}></p>
+                <p>Posting URL: <input placeholder="Web Link" type="text" name="url" value="{{ @jobEdit.url_link }}" required></p>
                 <div class="col-sm-12">
                     <div class="col-xs-12 input-group">
                         <fieldset class="form-group" id="checkbox-display">

@@ -192,11 +192,16 @@ class Controller
 
     public function hide($id)
     {
-
-
         //send post data to the model
         $GLOBALS['dataLayer']->hideJob($id);
-        header("Location: /");
+        $this->_f3->reroute('/');
+    }
+
+    public function deleteAnnouncement($id)
+    {
+        //send post data to the model
+        $GLOBALS['dataLayer']->hideAnnouncement($id);
+        $this->_f3->reroute('/announcements');
     }
 
     function edit($id)

@@ -12,6 +12,14 @@
                         <div class='panel-body wrap-text'>
                             {{ @announcement.description }}
                         </div>
+                        <check if="{{ @admin != false }}">
+                            <true>
+                                <a href="/NATRSJB/deleteAnnouncement.php?id={{ @announcement.announcement_number }}">
+                                    <span class="glyphicon glyphicon-trash red"></span>
+                                </a>
+                            </true>
+                            <false></false>
+                        </check>
                     </div>
                 </div>
             </repeat>

@@ -18,6 +18,10 @@ header {
     font-weight: bold !important;
 }
 
+.red {
+    color: red;
+}
+
 .footer hr {
     margin: 0 0 10px;
 }
@@ -157,6 +161,7 @@ table {
     border-radius: 10px; /* Add rounded borders */
     overflow: hidden; /* Hide any content overflowing from rounded corners */
     font-family: Arial, sans-serif;
+    margin-bottom: 30px;
 }
 
 th, td {

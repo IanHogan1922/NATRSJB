@@ -159,6 +159,17 @@ class DataLayer
         return $result;
     }
 
+    function hideAnnouncement($announcementNumber) {
+
+        $sql = "UPDATE announcements SET visibility = 0 WHERE announcement_number = :announcement_number";
+        $statement = $this->_dbh->prepare($sql);
+        $statement->bindParam(':announcement_number', $announcementNumber, PDO::PARAM_INT);
+        $result = $statement->execute();
+
+
+        return $result;
+    }
+
     function getJobById($id)
     {
 
