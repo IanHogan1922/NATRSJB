@@ -65,6 +65,12 @@ $f3->route('GET|POST /deleteAnnouncement.@id', function() {
 
 });
 
+$f3->route('GET|POST /recoverAnnouncement.@id', function() {
+
+    $GLOBALS['controller']->recoverAnnouncement($_GET['id']);
+
+});
+
 
 //Run fat free
 $f3->run();

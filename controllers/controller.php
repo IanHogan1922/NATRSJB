@@ -169,27 +169,6 @@ class Controller
         $this->_f3->reroute('/');
     }
 
-    public function editINPROGRESS($id)
-    {
-        if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
-
-            $this->_f3->set('title', "Edit Job");
-
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                //log the user in
-                $job = $GLOBALS['dataLayer']->updateJob($job);
-
-            }
-            $job = $GLOBALS['dataLayer']->getSingleJob($id);
-            echo $job;
-            $this->_f3->set('jobEdit', $job);
-            $view = new Template();
-            echo $view->render('views/jobEdit.html');
-        } else {
-            $this->_f3->reroute('/');
-        }
-    }
-
     public function hide($id)
     {
         //send post data to the model
@@ -203,6 +182,15 @@ class Controller
         $GLOBALS['dataLayer']->hideAnnouncement($id);
         $this->_f3->reroute('/announcements');
     }
+
+    public function recoverAnnouncement($id)
+    {
+        //send post data to the model
+        $GLOBALS['dataLayer']->returnAnnouncement($id);
+        $this->_f3->reroute('/announcements');
+    }
+
+
 
     function edit($id)
     {

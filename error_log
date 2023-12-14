@@ -2875,3 +2875,11 @@ Stack trace:
 [14-Dec-2023 23:01:26 UTC] [NATRSJB/controllers/controller.php:203] DataLayer->hideAnnouncement()
 [14-Dec-2023 23:01:26 UTC] [NATRSJB/index.php:64] Controller->deleteAnnouncement()
 [14-Dec-2023 23:01:26 UTC] [NATRSJB/index.php:70] Base->run()
+[14-Dec-2023 23:12:41 UTC] PHP Fatal error:  Uncaught Error: Class 'DataLayer' not found in /home/natrsjob/public_html/NATRSJB/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natrsjob/public_html/NATRSJB/index.php on line 13
+[14-Dec-2023 23:23:33 UTC] syntax error, unexpected 'else' (T_ELSE), expecting end of file [/home/natrsjob/public_html/NATRSJB/tmp/xq98t1t1apas.2z1kxzyvee0w8.php:37]
+[14-Dec-2023 23:23:33 UTC] [NATRSJB/controllers/controller.php:58] Preview->render()
+[14-Dec-2023 23:23:33 UTC] [NATRSJB/index.php:36] Controller->announcements()
+[14-Dec-2023 23:23:33 UTC] [NATRSJB/index.php:70] Base->run()

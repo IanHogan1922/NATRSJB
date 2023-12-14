@@ -29,7 +29,7 @@ class DataLayer
     function getAnnouncements() {
 
         // Define the query (test first!)
-        $sql = "SELECT * FROM announcements WHERE visibility != 0";
+        $sql = "SELECT * FROM announcements";
 
         // Prepare the statement
         $statement = $this->_dbh->prepare($sql);
@@ -166,6 +166,15 @@ class DataLayer
         $statement->bindParam(':announcement_number', $announcementNumber, PDO::PARAM_INT);
         $result = $statement->execute();
 
+        return $result;
+    }
+
+    function returnAnnouncement($announcementNumber) {
+
+        $sql = "UPDATE announcements SET visibility = 1 WHERE announcement_number = :announcement_number";
+        $statement = $this->_dbh->prepare($sql);
+        $statement->bindParam(':announcement_number', $announcementNumber, PDO::PARAM_INT);
+        $result = $statement->execute();
 
         return $result;
     }

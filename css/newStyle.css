@@ -386,6 +386,11 @@ label:hover input[type="checkbox"] {
     border-radius: 15px;
 }
 
+.deletedContent {
+    background-color: #cbcbcb !important;
+    color: #13470e !important;
+}
+
 input:focus,
 textarea:focus{
     border-color: #4CAF50 !important;
